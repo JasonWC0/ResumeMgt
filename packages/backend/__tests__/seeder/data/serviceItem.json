@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "_id": "61b800626eb2351d2e149b3e",
+      "createTime": "2021/12/14",
+      "modifyTime": "2021/12/14",
+      "serviceCode": "RA01",
+      "serviceName": "測試",
+      "serviceCategory":"HC",
+      "cost": 250,
+      "aboriginalCost": 250,
+      "timeRequired": 60,
+      "companyId": "6209f7102dde25cae862482d",
+      "valid": true,
+      "trainingRequired": false,
+      "serviceCombine": [],
+      "supportPingtungReport": [],
+      "serviceVersion": [
+        1,
+        2
+      ],
+      "customDefault": false,
+      "serviceOption": [
+        {
+          "seq": "RA01-1",
+          "description": "test",
+          "timeRequired": 60,
+          "shortDesc": "測試",
+          "itemTime": null,
+          "itemRely": "",
+          "itemExclude": "",
+          "methodDesc": "執行後以數字記次",
+          "method": ""
+        }
+      ],
+      "dayoff": false,
+      "createdAt" : 0,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "_id": "61b800626eb2351d2e149b3f",
+      "createTime": "2021/12/14",
+      "modifyTime": "2021/12/14",
+      "serviceCode": "RA02",
+      "serviceName": "測試",
+      "serviceCategory": "DC",
+      "cost": 250,
+      "aboriginalCost": 250,
+      "timeRequired": 60,
+      "companyId": "6209f7102dde25cae862482d",
+      "valid": true,
+      "trainingRequired": false,
+      "serviceCombine": [],
+      "supportPingtungReport": [],
+      "serviceVersion": [
+        1,
+        2
+      ],
+      "customDefault": false,
+      "serviceOption": [
+        {
+          "seq": "RA02-1",
+          "timeRequired": 60,
+          "shortDesc": "測試",
+          "itemTime": null,
+          "itemRely": "",
+          "itemExclude": "",
+          "methodDesc": "執行後以數字記次",
+          "method": ""
+        }
+      ],
+      "dayoff": false,
+      "createdAt" : 1,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "internalCode": "FB59-1ESH1-1.00",
+  "serviceTypes": [
+    "HC"
+  ],
+  "reviewRoles": [],
+  "fillRoles": [],
+  "viewRoles": [],
+  "clientDomain": "LUNA",
+  "companyId": "",
+  "category": "evaluation",
+  "type": "hi",
+  "version": "v1.00",
+  "name": "到宅訪視紀錄表",
+  "reviewType": 0,
+  "frequency": "",
+  "displayGroup": "收托紀錄",
+  "inUse": true,
+  "valid": true,
+  "__vn": 0,
+  "__cc": "",
+  "__sc": "Script"
+}

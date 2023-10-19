@@ -1,0 +1,44 @@
+{
+  "data":[
+    {
+      "_id": "638ee777b86ebfe1ca6e8ac5",
+      "service": "DC",
+      "companyId": "6209f7102dde25cae862482d",
+      "caseId": "000000626eb2351d2e140001",
+      "principal": "張某",
+      "startDate": "2022-10-01T16:00:00.000Z",
+      "endDate": "2022-11-29T16:00:00.000Z",
+      "file": {
+        "id": "xxxxxxxxxx1",
+        "fileName": "金貝貝日照合約.pdf",
+        "publicUrl": "https://storage-service.com/zzzzzz1.pdf",
+        "updatedAt": "2022-09-20T08:20:30.000Z",
+        "mimeType": "pdf"
+      },
+      "valid": true,
+      "__vn": 0,
+      "__cc": "",
+      "__sc": "TEST"
+    },
+    {
+      "_id": "638ee75e1a6e163f160f7423",
+      "service": "HC",
+      "companyId": "6209f7102dde25cae862482d",
+      "caseId": "000000626eb2351d2e140001",
+      "principal": "林某",
+      "startDate": "2022-10-15T16:00:00.000Z",
+      "endDate": null,
+      "file": {
+        "id": "xxxxxxxxxx2",
+        "fileName": "金貝貝居服合約.pdf",
+        "publicUrl": "https://storage-service.com/zzzzzz2.pdf",
+        "updatedAt": "2022-09-25T08:20:30.000Z",
+        "mimeType": "pdf"
+      },
+      "valid": true,
+      "__vn": 0,
+      "__cc": "",
+      "__sc": "TEST"
+    }
+  ]
+}

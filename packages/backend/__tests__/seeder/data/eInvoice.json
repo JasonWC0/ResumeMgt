@@ -1,0 +1,188 @@
+{
+  "data":[
+    {
+      "_id": "640825d60bf196be40f8b68c",
+      "companyId": "6209f7102dde25cae862482d",
+      "serialString": "ABC-20220303-001",
+      "caseId": "000000626eb2351d2e140001",
+      "invoiceNumber": "",
+      "issuedDate": "",
+      "status": 0,
+      "invType": "07",
+      "taxType": 1,
+      "vat": true,
+      "specialTaxType": 0,
+      "clearanceMark": null,
+      "identifier": "43887534",
+      "note": "尚未開立的發票備註",
+      "customer": {
+        "name": "金貝貝",
+        "address": "台北市內湖區瑞光路585號",
+        "mobile": "0123456789",
+        "email": "compalTest@compaltest.com"
+      },
+      "items": [
+        {
+          "name": "日照上半日服務A",
+          "count": 1,
+          "word": "次",
+          "price": 600,
+          "taxType": 1,
+          "amount": 600,
+          "note": ""
+        }
+      ],
+      "creator": "6209f71974ac715080d36600",
+      "modifier": "6209f71974ac715080d36600",
+      "createdAt": "2023-03-08T04:20:33.234Z",
+      "updatedAt": "2023-03-08T04:20:33.234Z",
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "_id": "640826a17bd8eb61916d0aaf",
+      "companyId": "6209f7102dde25cae862482d",
+      "serialString": "ABC-20220205-002",
+      "caseId": "000000626eb2351d2e140001",
+      "invoiceNumber": "TA98465820",
+      "issuedDate": "2023-01-15T16:00:00.000Z",
+      "status": 1,
+      "invType": "07",
+      "taxType": 1,
+      "vat": true,
+      "specialTaxType": 0,
+      "clearanceMark": null,
+      "print": true,
+      "donation": false,
+      "npoCode": "",
+      "carrierType": 0,
+      "carrierNum": "",
+      "amount": 800,
+      "identifier": "",
+      "note": "已開立的發票備註",
+      "customer": {
+        "name": "金貝貝",
+        "address": "台北市內湖區瑞光路585號",
+        "mobile": "0123456789",
+        "email": "compalTest@compaltest.com"
+      },
+      "items": [
+        {
+          "name": "日照上半日服務B",
+          "count": 1,
+          "word": "次",
+          "price": 800,
+          "taxType": 1,
+          "amount": 800,
+          "note": ""
+        }
+      ],
+      "invalidReason": "",
+      "creator": "6209f71974ac715080d36600",
+      "modifier": "6209f71974ac715080d36600",
+      "createdAt": "2023-01-10T04:20:33.234Z",
+      "updatedAt": "2023-01-10T04:20:33.234Z",
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "_id": "6408276bd3f71f9d316b36d2",
+      "companyId": "6209f7102dde25cae862482d",
+      "serialString": "ABC-20220205-002",
+      "caseId": "000000626eb2351d2e140000",
+      "invoiceNumber": "TT00789234",
+      "issuedDate": "2023-02-12T16:00:00.000Z",
+      "status": 2,
+      "invType": "07",
+      "taxType": 1,
+      "vat": true,
+      "specialTaxType": 0,
+      "clearanceMark": null,
+      "print": true,
+      "donation": false,
+      "npoCode": "",
+      "carrierType": 0,
+      "carrierNum": "",
+      "amount": 1200,
+      "identifier": "",
+      "note": "作廢的發票備註",
+      "customer": {
+        "name": "金貝貝",
+        "address": "台北市內湖區瑞光路585號",
+        "mobile": "0123456789",
+        "email": "compalTest@compaltest.com"
+      },
+      "items": [
+        {
+          "name": "日照上半日服務A",
+          "count": 2,
+          "word": "次",
+          "price": 600,
+          "taxType": 1,
+          "amount": 1200,
+          "note": ""
+        }
+      ],
+      "invalidReason": "開錯作廢",
+      "creator": "6209f71974ac715080d36600",
+      "modifier": "6209f71974ac715080d36600",
+      "createdAt": "2023-02-10T04:20:33.234Z",
+      "updatedAt": "2023-02-10T04:20:33.234Z",
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "_id": "6409a13e6661e24bab16949d",
+      "companyId": "6209f7102dde25cae862482d",
+      "serialString": "ABC-20220205-002",
+      "caseId": "000000626eb2351d2e140000",
+      "invoiceNumber": "",
+      "issuedDate": "",
+      "status": 0,
+      "invType": "07",
+      "taxType": 1,
+      "vat": true,
+      "specialTaxType": 0,
+      "clearanceMark": null,
+      "print": true,
+      "donation": false,
+      "npoCode": "",
+      "carrierType": 0,
+      "carrierNum": "",
+      "amount": 1200,
+      "identifier": "",
+      "note": "作廢的發票備註",
+      "customer": {
+        "name": "金貝貝",
+        "address": "台北市內湖區瑞光路585號",
+        "mobile": "0123456789",
+        "email": "compalTest@compaltest.com"
+      },
+      "items": [
+        {
+          "name": "日照上半日服務A",
+          "count": 2,
+          "word": "次",
+          "price": 600,
+          "taxType": 1,
+          "amount": 1200,
+          "note": ""
+        }
+      ],
+      "creator": "6209f71974ac715080d36600",
+      "modifier": "6209f71974ac715080d36600",
+      "createdAt": "2023-02-10T04:20:33.234Z",
+      "updatedAt": "2023-02-10T04:20:33.234Z",
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    }
+  ]
+}

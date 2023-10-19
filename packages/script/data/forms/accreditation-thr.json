@@ -1,0 +1,21 @@
+{
+  "internalCode": "FA59-000C6-1.01",
+  "serviceTypes" : ["DC"],
+  "reviewRoles" : [],
+  "clientDomain" : "",
+  "companyId" : "",
+  "category" : "accreditation",
+  "type" : "thr",
+  "version" : "v1.01",
+  "name" : "小規模多機能服務臨時住宿記錄表(D表)",
+  "reviewType" : 0,
+  "frequency" : "",
+  "displayGroup" : "",
+  "fillRoles" : [],
+  "viewRoles" : [],
+  "inUse" : true,
+  "valid" : true,
+  "__vn" : 0,
+  "__cc" : "",
+  "__sc" : ""
+}

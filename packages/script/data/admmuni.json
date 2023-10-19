@@ -1,0 +1,33 @@
+{
+  "shortName": "茂林區衛生所",
+  "companyId": "643576c6bf90cf5d6db317b9",
+  "forms": {
+    "accreditation-ci": {
+      "link": "./forms/accreditation-ci.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-cpcp": {
+      "link": "./forms/accreditation-cpcp.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-ccper": {
+      "link": "./forms/accreditation-ccper.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

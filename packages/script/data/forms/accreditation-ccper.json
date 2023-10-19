@@ -1,0 +1,21 @@
+{
+  "internalCode": "FA58-000C6-1.01",
+  "serviceTypes" : ["DC"],
+  "reviewRoles" : [],
+  "clientDomain" : "",
+  "companyId" : "",
+  "category" : "accreditation",
+  "type" : "ccper",
+  "version" : "v1.01",
+  "name" : "日間照顧個案照顧計畫執行記錄表(C表)",
+  "reviewType" : 0,
+  "frequency" : "",
+  "displayGroup" : "",
+  "fillRoles" : [],
+  "viewRoles" : [],
+  "inUse" : true,
+  "valid" : true,
+  "__vn" : 0,
+  "__cc" : "",
+  "__sc" : ""
+}

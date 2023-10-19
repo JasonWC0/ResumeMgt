@@ -1,0 +1,21 @@
+{
+  "internalCode": "PA14-000C6-1.01",
+  "serviceTypes" : ["DC"],
+  "reviewRoles" : [],
+  "clientDomain" : "",
+  "companyId" : "",
+  "category" : "accreditation",
+  "type" : "cpcp",
+  "version" : "v1.01",
+  "name" : "日間照顧個案需求暨個別化照顧計畫表(B表)",
+  "reviewType" : 0,
+  "frequency" : "",
+  "displayGroup" : "",
+  "fillRoles" : [],
+  "viewRoles" : [],
+  "inUse" : true,
+  "valid" : true,
+  "__vn" : 0,
+  "__cc" : "",
+  "__sc" : ""
+}

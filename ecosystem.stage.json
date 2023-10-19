@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "erpv3-stage-web",
+      "script": "./packages/backend/bin/www.js",
+      "exec_mode": "fork",
+      "args": [
+        "--env",
+        "stage",
+        "--port",
+        "9001"
+      ]
+    }
+  ]
+}

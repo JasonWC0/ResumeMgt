@@ -1,0 +1,78 @@
+{
+  "data": [
+    {
+      "_id": "6351f324563b7bb9c30d1fdf",
+      "caseId": "63452ca247156b77e6da5bc5",
+      "companyId": "5af456dbabef9a2f217bcd48",
+      "category": 0,
+      "chart": {
+        "id": "62b013746f66849d2d41dc74",
+        "publicUrl": "https://storage.googleapis.com/scs-erpv3-test/person/6209f71974ac715080d36309-A121000001/photo/NWZmOTBmODUtNzU5OS00OGU2LTk1ZDAtNTMyNDFlZmFmMzE5|man-icon.png",
+        "updatedAt": "2022-08-09T02:53:03.605Z",
+        "mimeType": ""
+      },
+      "maker": "string",
+      "makeDate": "0000-00-00",
+      "relationChart": {
+        "id": "62b013746f66849d2d41dc74",
+        "publicUrl": "https://storage.googleapis.com/scs-erpv3-test/person/6209f71974ac715080d36309-A121000001/photo/NWZmOTBmODUtNzU5OS00OGU2LTk1ZDAtNTMyNDFlZmFmMzE5|man-icon.png",
+        "updatedAt": "2022-08-09T02:53:03.605Z",
+        "mimeType": ""
+      },
+      "structureChart": [
+        {
+          "gender": "male",
+          "status": "handicapped",
+          "age": "7",
+          "marriage": "none",
+          "marriages": [],
+          "time": "",
+          "partnerStatus": "",
+          "partnerAge": "",
+          "isCase": true,
+          "id": 1,
+          "parent": null,
+          "parentNumber": null
+        }
+      ],
+      "isTemp": true,
+      "isDraw": false,
+      "__vn": 0,
+      "valid": true
+    },
+    {
+      "_id": "6351f324563b7bb9c30d1fe1",
+      "caseId": "63452ca247156b77e6da5bc5",
+      "companyId": "5af456dbabef9a2f217bcd48",
+      "category": 1,
+      "chart": {
+        "id": "62b013746f66849d2d41dc75",
+        "publicUrl": "https://storage.googleapis.com/scs-erpv3-test/person/6209f71974ac715080d36309-A121000001/photo/NWZmOTBmODUtNzU5OS00OGU2LTk1ZDAtNTMyNDFlZmFmMzE5|man-icon.png",
+        "updatedAt": "2022-08-09T02:53:03.605Z",
+        "mimeType": ""
+      },
+      "maker": "string",
+      "makeDate": "0000-00-00",
+      "relationChart": {
+        "id": "62b013746f66849d2d41dc74",
+        "publicUrl": "https://storage.googleapis.com/scs-erpv3-test/person/6209f71974ac715080d36309-A121000001/photo/NWZmOTBmODUtNzU5OS00OGU2LTk1ZDAtNTMyNDFlZmFmMzE5|man-icon.png",
+        "updatedAt": "2022-08-09T02:53:03.605Z",
+        "mimeType": ""
+      },
+      "structureChart": [
+        {
+          "name": "醫院",
+          "connected": true,
+          "direction": "in",
+          "conflict": false,
+          "other": "",
+          "id": 1
+        }
+      ],
+      "isTemp": true,
+      "isDraw": false,
+      "__vn": 0,
+      "valid": true
+    }
+  ]
+}

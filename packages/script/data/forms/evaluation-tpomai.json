@@ -1,0 +1,22 @@
+{
+  "internalCode": "TBD",
+  "serviceTypes" : ["DC"],
+  "reviewRoles" : [],
+  "clientDomain" : "LUNA",
+  "companyId" : "",
+  "category" : "evaluation",
+  "type" : "tpomai",
+  "version" : "v1.00",
+  "name" : "2-16 跌倒風險篩檢量表",
+  "reviewType" : 0,
+  "frequency" : "",
+  "displayGroup" : "收托評估",
+  "fillRoles" : [],
+  "viewRoles" : [],
+  "signatures": [],
+  "inUse" : true,
+  "valid" : true,
+  "__vn" : 0,
+  "__cc" : "",
+  "__sc" : ""
+}

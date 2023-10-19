@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "corpId": "6209f71974ac715080d36309",
+      "personId": "6209f72afe7e914d3557b754",
+      "type": 0,
+      "account": "admin",
+      "keycloakId": "",
+      "companyAdmin": true,
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "corpId": "6209f71974ac715080d36309",
+      "personId": "6209f74ea145923ab57773b9",
+      "type": 0,
+      "account": "nurse1",
+      "keycloakId": "",
+      "companyAdmin": false,
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "corpId": "6209f71974ac715080d36309",
+      "personId": "6209f7563ccd5a73d08e1b57",
+      "type": 0,
+      "account": "nurse2",
+      "keycloakId": "",
+      "companyAdmin": false,
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "corpId": "6209f71974ac715080d36309",
+      "personId": "6209f75d85d4b28320f1f81e",
+      "type": 0,
+      "account": "nurse3",
+      "keycloakId": "",
+      "companyAdmin": false,
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "corpId": "6209f71974ac715080d36309",
+      "personId": "6209f7658c9420972d3cbcee",
+      "type": 0,
+      "account": "nurseh1",
+      "keycloakId": "",
+      "companyAdmin": false,
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "corpId": "6209f71974ac715080d36309",
+      "personId": "6209f76b229a85fea0ca9669",
+      "type": 0,
+      "account": "nurseh2",
+      "keycloakId": "",
+      "companyAdmin": false,
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "corpId": "6209f7716b8f75fa35a0e18a",
+      "personId": "6209f777754622c8c6c3898c",
+      "type": 0,
+      "account": "C3admin",
+      "keycloakId": "",
+      "companyAdmin": true,
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    }
+  ]
+}

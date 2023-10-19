@@ -1,0 +1,2388 @@
+openapi: 3.0.1
+info:
+  title: ERPv3
+  description: ""
+  version: 0.0.1
+servers:
+  - url: http://localhost:9000/app/main/api/{apiVer}
+    description: The api server
+    variables:
+      apiVer:
+        default: v1
+        enum:
+          - v1
+
+tags:
+  - name: CORPORATION
+    description: 總公司集團
+  - name: ACCOUNT
+    description: 系統帳戶
+  - name: PERSON
+    description: 個人資料
+  - name: COMPANY
+    description: 公司資料
+  - name: EMPLOYEE
+    description: 員工資料
+  - name: CUSTOMER
+    description: 顧客資料
+  - name: STORAGE_SERVICE
+    description: 檔案系統
+  - name: SERVICE_ITEM
+    description: 自訂服務項目
+
+paths:
+  /corporations:
+    post:
+      tags:
+        - CORPORATION
+      summary: Create a new corporation
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CorporationObject"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /corporations/{corpId}:              
+    get:
+      tags:
+        - CORPORATION
+      summary: Read one corporation
+      parameters: 
+        - name: corpId
+          in: path
+          description: The unique id of corporation
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/CorporationObject"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    patch:
+      tags:
+        - CORPORATION
+      summary: Update corporation info
+      parameters: 
+        - name: corpId
+          in: path
+          description: The unique id of corporation
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CorporationObject"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    delete:
+      tags:
+        - CORPORATION
+      summary: Delete one corporation
+      parameters: 
+        - name: corpId
+          in: path
+          description: The unique id of corporation
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /persons:
+    post:
+      tags:
+        - PERSON
+      summary: Create a new person
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestCreatePerson"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /persons/{personId}:
+    get:
+      tags:
+        - PERSON
+      summary: Read one person
+      parameters: 
+        - name: personId
+          in: path
+          description: The unique id of person
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseCreatePerson"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    patch:
+      tags:
+        - PERSON
+      summary: Update person info
+      parameters: 
+        - name: personId
+          in: path
+          description: The unique id of person
+          required: true
+          schema:
+            type: string
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestCreatePerson"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    delete:
+      tags:
+        - PERSON
+      summary: Delete one person
+      parameters: 
+        - name: personId
+          in: path
+          description: The unique id of person
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /persons/c/fs:
+    get:
+      tags:
+        - PERSON
+      summary: Fuzzy search person by name
+      parameters: 
+        - name: corpId
+          in: query
+          description: The unique id of corporation
+          required: true
+          schema:
+            type: string
+        - name: name
+          in: query
+          description: Fuzzy search name
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        name:
+                          type: string
+                        personalId:
+                          type: string
+                        mobile:
+                          type: string
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /employees:
+    get:
+      tags:
+        - EMPLOYEE
+      summary: List all employees of the company
+      parameters: 
+        - name: companyId
+          in: query
+          description: The unique id of company
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseListEmployeeInfo"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /employees/{personId}:
+    post:
+      tags:
+        - EMPLOYEE
+      summary: Create a new employee info
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestCreateEmployee"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    patch:
+      tags:
+        - EMPLOYEE
+      summary: Update someone's employee info
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestCreateEmployee"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    delete:
+      tags:
+        - EMPLOYEE
+      summary: Delete someone's employee info
+      parameters: 
+        - name: personId
+          in: path
+          description: The unique id of person
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    get:
+      tags:
+        - EMPLOYEE
+      summary: Read someone's employee info
+      parameters: 
+        - name: personId
+          in: path
+          description: The unique id of person
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseEmployeeInfo"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /customers:
+    get:
+      tags:
+        - CUSTOMER
+      summary: List all customers of the corporation
+      parameters: 
+        - name: corpId
+          in: query
+          description: The unique id of corporation
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseListCustomerInfo"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /customers/{personId}:
+    get:
+      tags:
+        - CUSTOMER
+      summary: Read someone's customer info
+      parameters: 
+        - name: personId
+          in: path
+          description: The unique id of person
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseCustomerInfo"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    post:
+      tags:
+        - CUSTOMER
+      summary: Create someone's customer info
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestCreateCustomer"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    patch:
+      tags:
+        - CUSTOMER
+      summary: Create someone's customer info
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestCreateCustomer"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body 
+    delete:
+      tags:
+        - CUSTOMER
+      summary: Delete someone's customer info
+      parameters: 
+        - name: personId
+          in: path
+          description: The unique id of person
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /companies/{companyId}/{_type}:
+    get:
+      tags:
+        - COMPANY
+      summary: Get company information or setting
+      parameters: 
+        - name: companyId
+          in: path
+          description: The unique id of company
+          required: true
+          schema:
+            type: string
+        - name: _type
+          in: path
+          description: Setting type
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/ResponseCustomerInfo'
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /companies/{companyId}/info:
+    patch:
+      tags:
+        - COMPANY
+      summary: Update company information
+      parameters: 
+        - name: companyId
+          in: path
+          description: The unique id of company
+          required: true
+          schema:
+            type: string
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestUpdateCompany"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /companies/{companyId}/institutionSetting:
+    patch:
+      tags:
+        - COMPANY
+      summary: Update institutional settings of company information
+      parameters: 
+        - name: companyId
+          in: path
+          description: The unique id of company
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestUpdateCompanyInstitutionSetting"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /storages/t:
+    get:
+      tags:
+        - STORAGE_SERVICE
+      summary: Get storage service token
+      parameters: 
+        - name: companyId
+          in: query
+          description: The unique id of company
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    type: object
+                    properties:
+                      storageServiceToken:
+                        type: string
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /serviceItems/{serviceItemId}:
+    get:
+      tags:
+        - SERVICE_ITEM
+      summary: Get service item information by serviceItemId.
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseReadServiceItem"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    patch:
+      tags:
+        - SERVICE_ITEM
+      summary: Update service items by serviceItemId.
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestCreateServiceItem"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    delete:
+      tags:
+        - SERVICE_ITEM
+      summary: Delete service item by serviceItemId.
+      parameters: 
+        - name: serviceItemId
+          in: path
+          description: The unique id of service item
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /serviceItems/d:
+    post:
+      tags:
+        - SERVICE_ITEM
+      summary: Delete service items by serviceItemIds.
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                serviceItemIds:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    type: object
+                    properties:
+                      success:
+                        type: array
+                        items:
+                          type: string
+                      fail:
+                        type: array
+                        items:
+                          type: string
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+  /serviceItems:
+    post:
+      tags:
+        - SERVICE_ITEM
+      summary: Create custom service item.
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+        - $ref: "#/components/headerBaseInfo/CompanyId"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestCreateServiceItem"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseRegister"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+    get:
+      tags:
+        - SERVICE_ITEM
+      summary: Query all service items by companyId.
+      parameters:
+        - $ref: "#/components/headerBaseInfo/SourceCode"
+        - $ref: "#/components/headerBaseInfo/ConfirmCode"
+        - $ref: "#/components/headerBaseInfo/VersionNumber"
+        - $ref: "#/components/headerBaseInfo/CompanyId"
+      responses:
+        "200":
+          description: Success
+          content:
+            "*/*":
+              schema:
+                type: object
+                properties:
+                  traceId:
+                    type: string
+                  code:
+                    type: integer
+                    format: Int32
+                  message:
+                    type: string
+                  result:
+                    $ref: "#/components/schemas/ResponseListServiceItems"
+        "400":
+          description: Bad request
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal server error
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+      x-codegen-request-body-name: body
+
+components:
+  headerBaseInfo:
+    SourceCode:
+      in: header
+      name: sc
+      type: string
+    ConfirmCode:
+      in: header
+      name: cc
+      type: string
+    VersionNumber:
+      in: header
+      name: vn
+      type: string
+    CompanyId:
+      in: header
+      name: companyId
+      type: string
+      required: true
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+    BearerAuth:
+      type: http
+      scheme: bearer
+  schemas:
+    # 預設
+    ErrorResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          example: 10001
+        message:
+          type: string
+          example: OOps!! Something wrong
+    RequestHeaderBearer:
+      type: string
+      example: Bearer {access token}
+    ResponseRegister:
+      type: object
+    # Object value
+    CorporationObject:
+      type: object
+      properties:
+        fullName:
+          type: string
+        shortName:
+          type: string
+        code:
+          type: string
+    PlaceObject:
+      type: object
+      properties:
+        postalCode:
+          type: string
+        city:
+          type: string
+        region:
+          type: string
+        village:
+          type: string
+        neighborhood:
+          type: string
+        road:
+          type: string
+        others:
+          type: string
+        lat:
+          type: number
+        long:
+          type: number
+    EmployeeObject:
+      type: object
+      properties:
+        status:
+          type: number
+        startDate:
+          type: string
+          format: datetime
+        endDate:
+          type: string
+          format: datetime
+        comPersonMgmt:
+          type: array
+          items:
+            $ref: "#/components/schemas/ComPersonMgmtObject"
+        contacts:
+          type: array
+          items:
+            $ref: "#/components/schemas/ContactObject"
+    ComPersonMgmtObject:
+      type: object
+      properties:
+        companyId:
+          type: string
+        employeeNum:
+          type: string
+        supervisorId:
+          type: string
+        supervisor2Id:
+          type: string
+        roles:
+          type: array
+          items:
+            type: number
+        employmentType:
+          required: true
+          type: array
+          items:
+            type: number
+        employeeCategory:
+          type: string
+        centralGovSystemAccount:
+          type: string
+        weekHours:
+          type: number
+        reportingAgent:
+          
+        serviceRegion:
+          
+        interviewNote:
+          
+
+    ContactObject:
+      type: object
+      properties:
+        personId:
+          type: string
+          description: 填寫人員Id
+        relationship:
+          type: string
+        note:
+          type: string
+        test:
+          $ref: "#/components/schemas/CusRoleObject"
+    CusRoleObject:
+      type: object
+      properties:
+        companyId:
+          type: string
+          description: 填寫公司Id
+        roles:
+          type: array
+          items:
+            type: number
+    CustomerObject:
+      type: object
+      properties:
+        cusRoles:
+          type: array
+          items:
+            $ref: "#/components/schemas/CusRoleObject"
+        contacts:
+          type: array
+          items:
+            $ref: "#/components/schemas/ContactObject"
+        agent:
+          $ref: "#/components/schemas/ContactObject"
+        caregivers:
+          type: array
+          items:
+            $ref: "#/components/schemas/ContactObject"
+    BankAccountObject:
+      type: object
+      properties:
+        name:
+          type: string
+        code:
+          type: string
+        branch:
+          type: string
+        account:
+          type: string
+        number:
+          type: string
+    ReportingAgenObject:
+      type: object
+      properties:
+        isAgent:
+          type: boolean
+        agentType:
+          type: number
+        employeeAgent:
+          type: string
+    FileObject:
+      type: object
+      properties:
+        id:
+          type: string
+          required: true
+        publicUrl:
+          type: string
+          required: true
+        mimeType:
+          type: string
+    ServiceOptionObject:
+      type: object
+      properties:
+        seq:
+          type: string
+        timeRequired:
+          type: number
+        shortDesc:
+          type: string
+        itemTime:
+          type: number
+        itemRely:
+          type: string
+        itemExclude:
+          type: string
+        methodDesc:
+          type: string
+        method:
+          type: string
+
+    # Request object
+    RequestCreatePerson:
+      type: object
+      properties:
+        corpId:
+          type: string
+        name:
+          type: string
+        nickname:
+          type: string
+        personalId:
+          type: string
+        email:
+          type: string
+        mobile:
+          type: string
+        phoneH:
+          type: string
+        phoneO:
+          type: string
+        extNumber:
+          type: string
+        lineId:
+          type: string
+        facebook:
+          type: string
+        gender:
+          type: number
+        birthDate:
+          type: string
+        nationality:
+          type: number
+        languages:
+          type: array
+          items:
+            type: number
+        education:
+          type: number
+        disability:
+          type: number
+        aborigines:
+          type: number
+        aboriginalRace:
+          type: number
+        belief:
+          type: number
+        registerPlace:
+          $ref: "#/components/schemas/PlaceObject"
+        residencePlace:
+          $ref: "#/components/schemas/PlaceObject"
+        photo:
+          $ref: "#/components/schemas/FileObject"
+        employee:
+          $ref: "#/components/schemas/EmployeeObject"
+        customer:
+          $ref: "#/components/schemas/CustomerObject"
+        otherLanguage:
+          type: string
+        note:
+          type: string
+    RequestUpdatePerson:
+      type: object
+      properties:
+        name:
+          type: string
+        nickname:
+          type: string
+        personalId:
+          type: string
+        email:
+          type: string
+        mobile:
+          type: string
+        phoneH:
+          type: string
+        phoneO:
+          type: string
+        extNumber:
+          type: string
+        lineId:
+          type: string
+        facebook:
+          type: string
+        gender:
+          type: number
+        birthDate:
+          type: string
+        nationality:
+          type: number
+        languages:
+          type: array
+          items:
+            type: number
+        education:
+          type: number
+        disability:
+          type: number
+        aborigines:
+          type: number
+        aboriginalRace:
+          type: number
+        registerPlace:
+          $ref: "#/components/schemas/PlaceObject"
+        residencePlace:
+          $ref: "#/components/schemas/PlaceObject"
+        photo:
+          $ref: "#/components/schemas/FileObject"
+        employee:
+          $ref: "#/components/schemas/EmployeeObject"
+        customer:
+          $ref: "#/components/schemas/CustomerObject"
+        otherLanguage:
+          type: string
+        note:
+          type: string
+    RequestUpdateCompany:
+      type: object
+      properties:
+        fullName:
+          type: string
+        shortName:
+          type: string
+        taxId:
+          type: string
+        licenseNumber:
+          type: string
+        registerPlace:
+          $ref: "#/components/schemas/PlaceObject"
+        phone:
+          type: string
+        fax:
+          type: string
+        bankAccount:
+          $ref: "#/components/schemas/BankAccountObject"
+        organizationalChart:
+          $ref: "#/components/schemas/FileObject"
+    RequestCreateEmployee:
+      type: object
+      properties:
+        account:
+          type: string
+        employeeStatus:
+          type: number
+        startDate:
+          type: string
+        endDate:
+          type: string
+        contact:
+          type: object
+          properties:
+            name:
+              type: string
+            mobile:
+              type: string
+            phoneH:
+              type: string
+            relationship:
+              type: string
+        companyId:
+          type: string
+        employeeNum:
+          type: string
+        roles:
+          type: array
+          items:
+            type: number
+        employmentType:
+          type: number
+        employeeCategory:
+          type: string
+        centralGovSystemAccount:
+          type: string
+        weekHours:
+          type: number
+        reportingAgent:
+          $ref: "#/components/schemas/ReportingAgenObject"
+        supervisorId:
+          type: string
+        supervisor2Id:
+          type: string
+        serviceRegion:
+          type: array
+          items:
+            type: string
+        interviewNote:
+          type: string
+        serviceItemQualification:
+          type: array
+          items: 
+            type: number
+    RequestCreateCustomer:
+      type: object
+      properties:
+        cusRoles:
+          $ref: "#/components/schemas/CusRoleObject"
+        contacts:
+          type: array
+          $ref: "#/components/schemas/ContactObject"
+        agent:
+          $ref: "#/components/schemas/ContactObject"
+        caregivers:
+          type: array
+          $ref: "#/components/schemas/ContactObject"
+    RequestUpdateCompanyInstitutionSetting:
+      type: object
+      properties:
+        employeeCategory:
+          type: array
+          items:
+            type: number
+        HCShiftScheduleRules:
+          type: object 
+          properties:
+            startTime:
+              type: string
+            endTime:
+              type: string
+            minInternal:
+              type: number
+        RCShiftScheduleRules:
+          type: object
+          properties:
+            forbiddenLessHours:
+              type: number
+            warningOverHours:
+              type: number
+            warningLessHours:
+              type: number
+        DCAutoPunch:
+          type: object
+          properties:
+            onShuttleArrived:
+              type: boolean
+            onTempMeasured:
+              type: boolean
+            useShiftScheduleTime:
+              type: boolean
+            linkingUpBBCodeTime:
+              type: boolean
+        DCServiceTime:
+          type: object
+          properties:
+            shiftScheduleBCode:
+              type: boolean
+            fullDayStartTime:
+              type: string
+            fullDayEndTime:
+              type: string
+            fullDayShuttleTime:
+              type: number
+            beforeNoonStartTime:
+              type: string
+            beforeNoonEndTime:
+              type: string
+            beforeNoonShuttleTime:
+              type: number
+            afterNoonStartTime:
+              type: string
+            afterNoonEndTime:
+              type: string
+            afterNoonShuttleTime:
+              type: number
+            communityDinnerStartTime:
+              type: string
+            communityDinnerEndTime:
+              type: string
+            communityAssistBathTime:
+              type: number
+        HCCentralServiceReport:
+          type: object
+          properties:
+            splitType:
+              type: number
+            timeType:
+              type: number
+        DCCentralServiceReport:
+          type: object
+          properties:
+            splitType:
+              type: number
+        HCCaseBill:
+          type: object
+          properties:
+            version:
+              type: number
+            timeType:
+              type: number
+        DCCaseBill:
+          type: object
+          properties:
+            version:
+              type: number
+        caseReceipt:
+          type: object
+          properties:
+            customText1:
+              type: string
+            customText2:
+              type: string
+            serialNumber:
+              type: number
+        stamps:
+          type: object
+          properties:
+            institutionStamp:
+              $ref: "#/components/schemas/FileObject"
+            principalStamp:
+              $ref: "#/components/schemas/FileObject"
+            accountingStamp:
+              $ref: "#/components/schemas/FileObject"
+            handlerStamp:
+              $ref: "#/components/schemas/FileObject"
+        idealTime:
+          type: object
+          properties:
+            limitMinutes:
+              type: number
+            alertMinute:
+              type: number
+    RequestCreateServiceItem:
+      type: object
+      properties:
+        serviceName:
+          type: string
+          required: true
+        serviceCategory:
+          type: number
+          required: true
+        description:
+          type: string
+          required: true
+        cost:
+          type: number
+          required: true
+        timeRequired:
+          type: number
+          required: true
+        customDefault:
+          type: boolean
+          default: false
+
+    # Response object
+    ResponseCreatePerson:
+      type: object
+      properties:
+        personId:
+          type: string
+        corpId:
+          type: string
+        name:
+          type: string
+        nickname:
+          type: string
+        personalId:
+          type: string
+        email:
+          type: string
+        mobile:
+          type: string
+        phoneH:
+          type: string
+        phoneO:
+          type: string
+        extNumber:
+          type: string
+        lineId:
+          type: string
+        facebook:
+          type: string
+        gender:
+          type: number
+        birthDate:
+          type: string
+        nationality:
+          type: number
+        languages:
+          type: array
+          items:
+            type: number
+        education:
+          type: number
+        disability:
+          type: number
+        aborigines:
+          type: number
+        aborigineRate:
+          type: number
+        registerPlace:
+          $ref: "#/components/schemas/PlaceObject"
+        residencePlace:
+          $ref: "#/components/schemas/PlaceObject"
+        photo:
+          $ref: "#/components/schemas/FileObject"
+        employee:
+          $ref: "#/components/schemas/EmployeeObject"
+        customer:
+          $ref: "#/components/schemas/CustomerObject"
+        otherLanguage:
+          type: string
+        note:
+          type: string
+    ResponseCompanyInfo:
+      type: object
+      properties:
+        fullName:
+          type: string
+        shortName:
+          type: string
+        taxId:
+          type: string
+        licenseNumber:
+          type: string
+        phone:
+          type: string
+        fax:
+          type: string
+        registerPlace:
+          $ref: "#/components/schemas/PlaceObject"
+        bankAccount:
+          $ref: "#/components/schemas/BankAccountObject"
+        organizationalChart:
+          $ref: "#/components/schemas/FileObject"
+    ResponseCompanyInstitutionSetting:
+      type: object
+    ResponseEmployeeInfo:
+      type: object
+      properties:
+        personId:
+          type: string
+        companyId:
+          type: string
+        photo:
+          $ref: "#/components/schemas/FileObject"
+        account:
+          type: string
+        employeeNum:
+          type: string
+        name:
+          type: string
+        nickname:
+          type: string
+        personalId:
+          type: string
+        nationality:
+          type: number
+        gender:
+          type: number
+        birthDate:
+          type: string
+          format: datetime
+        languages:
+          type: array
+          items:
+            type: number
+        otherLanguage:
+          type: string
+        education:
+          type: number
+        disability:
+          type: number
+        aborigines:
+          type: number
+        aboriginalRace:
+          type: number
+        email:
+          type: string
+        mobile:
+          type: string
+        phoneH:
+          type: string
+        phoneO:
+          type: string
+        extNumber:
+          type: string
+        lineId:
+          type: string
+        facebook:
+          type: string
+        registerPlace:
+          $ref: "#/components/schemas/PlaceObject"
+        residencePlace:
+          $ref: "#/components/schemas/PlaceObject"
+        employeeStatus:
+          type: number
+        startDate:
+          type: string
+          format: datetime
+        endDate:
+          type: string
+          format: datetime
+        contact:
+          type: object
+          properties:
+            name:
+              type: string
+            mobile:
+              type: string
+            phoneH:
+              type: string
+            relationship:
+              type: string
+        roles:
+          type: array
+          items:
+            type: number
+        supervisor:
+          type: object
+          properties:
+            personId:
+              type: string
+            employeeNum:
+              type: string
+            name:
+              type: string
+        supervisor2:
+          type: object
+          properties:
+            personId:
+              type: string
+            employeeNum:
+              type: string
+            name:
+              type: string
+        employmentType:
+          type: string
+        employeeCategory:
+          type: string
+        centralGovSystemAccount:
+          type: string
+        weekHours:
+          type: number
+        reportingAgent:
+          type: object
+          properties:
+            isAgent:
+              type: boolean
+            agentType:
+              type: number
+            employeeAgent:
+              type: string
+        serviceRegion:
+          type: array
+          items:
+            type: string
+        interviewNote:
+          type: string
+        serviceItemQualification:
+          type: array
+          items: 
+            type: number
+    ResponseListEmployeeInfo:
+      type: object
+      properties:
+        total:
+          type: number
+        list:
+          type: array
+          items:
+            type: object
+            properties:
+              personId:
+                type: string
+              account:
+                type: string
+              employeeNum:
+                type: string
+              name:
+                type: string
+              gender:
+                type: number
+              mobile:
+                type: string
+              roles:
+                type: array
+                items:
+                  type: number
+              employeeStatus:
+                type: number
+              supervisorName:
+                type: string
+              supervisor2Name:
+                type: string
+              employeeCategory:
+                type: string
+    ResponseListCustomerInfo:
+      type: object
+      properties:
+        total:
+          type: number
+        list:
+          type: array
+          items:
+            type: object
+            properties:
+              personId:
+                type: string
+              name:
+                type: string
+              personalId:
+                type: string
+              gender:
+                type: number
+              birthDate:
+                type: string
+                format: datetime
+              cusRoles:
+                type: array
+                items:
+                  $ref: "#/components/schemas/CusRoleObject"
+    ResponseCustomerInfo:
+      type: object
+      properties:
+        name:
+          type: string
+        nickname:
+          type: string
+        personalId:
+          type: string
+        nationality:
+          type: number
+        gender:
+          type: number
+        birthDate:
+          type: string
+          format: datetime
+        languages:
+          type: array
+          items:
+            type: number
+        otherLanguage:
+          type: string
+        education:
+          type: number
+        disability:
+          type: number
+        aborigines:
+          type: number
+        aboriginalRace:
+          type: number
+        email:
+          type: string
+        mobile:
+          type: string
+        phoneH:
+          type: string
+        phoneO:
+          type: string
+        extNumber:
+          type: string
+        lineId:
+          type: string
+        facebook:
+          type: string
+        registerPlace:
+          $ref: "#/components/schemas/PlaceObject"
+        residencePlace:
+          $ref: "#/components/schemas/PlaceObject"
+        photo:
+          $ref: "#/components/schemas/FileObject"
+        cusRoles:
+          type: array
+          items:
+            $ref: "#/components/schemas/CusRoleObject"
+        contacts:
+          type: array
+          items:
+            type: object
+            properties:
+              personId:
+                type: string
+              name:
+                type: string
+              relationship:
+                type: string
+              mobile:
+                type: string
+              note:
+                type: string
+        agent:
+          type: object
+          properties:
+            personId:
+              type: string
+            name:
+              type: string
+            relationship:
+              type: string
+            mobile:
+              type: string
+            phoneH:
+              type: string
+            phoneO:
+              type: string
+            registerPlace:
+              $ref: "#/components/schemas/PlaceObject"
+            note:
+              type: string
+        caregivers:
+          type: array
+          items:
+            type: object
+            properties:
+              personId:
+                type: string
+              name:
+                type: string
+              relationship:
+                type: string
+              gender:
+                type: number
+              birthDate:
+                type: string
+                format: datetime
+              note:
+                type: string
+    ResponseReadServiceItem:
+      type: object
+      properties:
+        id:
+          type: string
+        companyId:
+          type: string
+        serviceCode:
+          type: string
+        serviceName:
+          type: string
+        serviceExclude:
+          type: string
+        serviceRely:
+          type: string
+        time:
+          type: number
+        unit:
+          type: number
+        servicerCert:
+        cost:
+          type: number
+        aboriginalCost:
+          type: number
+        cms:
+          type: number
+        serviceCategory:
+          type: number
+        timeRequired:
+          type: number
+        dayoff:
+          type: boolean
+        periodUnit:
+          type: string
+        servicePeriod:
+          type: string
+        systemAuto:
+          type: string
+        cmsLimit:
+          type: number
+        city:
+          type: string
+        serviceOption:
+          type: array
+          items:
+            $ref: "#/components/schemas/ServiceOptionObject"
+        customDefault:
+          type: boolean
+        lowPay:
+          type: number
+        middlePay:
+          type: number
+        normalPay:
+          type: number
+        serviceVersion:
+          type: array
+          items:
+            type: number
+        fixedTimeFlag:
+          type: boolean
+        departFrom:
+          type: string
+        supportPingtungReport:
+          type: array
+          items:
+            type: number
+        reportName:
+          type: string
+        serviceCombine:
+          type: array
+          items:
+            type: string
+        trainingRequired:
+          type: boolean
+    ResponseListServiceItems:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+          companyId:
+            type: string
+          serviceCode:
+            type: string
+          serviceName:
+            type: string
+          serviceExclude:
+            type: string
+          serviceRely:
+            type: string
+          time:
+            type: number
+          unit:
+            type: number
+          servicerCert:
+          cost:
+            type: number
+          aboriginalCost:
+            type: number
+          cms:
+            type: number
+          serviceCategory:
+            type: number
+          timeRequired:
+            type: number
+          dayoff:
+            type: boolean
+          periodUnit:
+            type: string
+          servicePeriod:
+            type: string
+          systemAuto:
+            type: string
+          cmsLimit:
+            type: number
+          city:
+            type: string
+          serviceOption:
+            type: array
+            items:
+              $ref: "#/components/schemas/ServiceOptionObject"
+          customDefault:
+            type: boolean
+          lowPay:
+            type: number
+          middlePay:
+            type: number
+          normalPay:
+            type: number
+          serviceVersion:
+            type: array
+            items:
+              type: number
+          fixedTimeFlag:
+            type: boolean
+          departFrom:
+            type: string
+          supportPingtungReport:
+            type: array
+            items:
+              type: number
+          reportName:
+            type: string
+          serviceCombine:
+            type: array
+            items:
+              type: string
+          trainingRequired:
+            type: boolean

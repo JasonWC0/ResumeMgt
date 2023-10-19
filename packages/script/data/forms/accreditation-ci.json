@@ -1,0 +1,21 @@
+{
+  "internalCode": "RA31-000C6-1.01",
+  "serviceTypes" : ["DC"],
+  "reviewRoles" : [],
+  "clientDomain" : "",
+  "companyId" : "",
+  "category" : "accreditation",
+  "type" : "ci",
+  "version" : "v1.01",
+  "name" : "日間照顧個案基本資料表(A表)",
+  "reviewType" : 0,
+  "frequency" : "",
+  "displayGroup" : "",
+  "fillRoles" : [],
+  "viewRoles" : [],
+  "inUse" : true,
+  "valid" : true,
+  "__vn" : 0,
+  "__cc" : "",
+  "__sc" : ""
+}

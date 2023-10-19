@@ -1,0 +1,3034 @@
+{
+  "data": [
+    {
+      "code": "ALL",
+      "name": "全功能",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": true
+        },
+        "hcShiftList": {
+          "index": true
+        },
+        "locationManager": {
+          "index": true
+        },
+        "supervisorVisitRecord": {
+          "index": true
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": true,
+          "footPrint": true,
+          "bodyTemperature": true,
+          "vaccineRecord": true
+        },
+        "writeOffHC": {
+          "fa100Upload": true,
+          "fa100Query": true,
+          "fa110Query": true,
+          "fa200Query": true,
+          "fa300Query": true
+        },
+        "daycaseService": {
+          "serviceRecord": true,
+          "vitalSigns": true
+        },
+        "daycaseShiftList": {
+          "index": true
+        },
+        "driverManager": {
+          "driverShiftTotal": true,
+          "driverShift": true,
+          "pickupOrder": true
+        },
+        "activityManager": {
+          "activityCalendar": true,
+          "activityRecord": true,
+          "activityPlan": true,
+          "groupManagement": true
+        },
+        "daycaseEvaluate": {
+          "preCaseList": true,
+          "preCaseProfile": true,
+          "consultForm": true,
+          "adaptEvaluationForm": true,
+          "referral": true
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": true,
+          "footPrint": true,
+          "bodyTemperature": true,
+          "vaccineRecord": true
+        },
+        "writeOffDC": {
+          "fa100Upload": true,
+          "fa100Query": true,
+          "fa110Query": true,
+          "fa200Query": true,
+          "fa300Query": true
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": true,
+          "tourVisitorList": true,
+          "caseVisitorCalendar": true,
+          "caseVisitorList": true,
+          "tourVisitorReservation": true,
+          "bedBooking": true,
+          "depositManagement": true
+        },
+        "package": {
+          "packageManagement": true
+        },
+        "bedCalendar": {
+          "index": true
+        },
+        "rcShift": {
+          "shiftCalendar": true,
+          "shiftManagement": true,
+          "shiftHandover": true
+        },
+        "nursingCare": {
+          "nursingActivity": true,
+          "medicalAffairs": true,
+          "nursingRoundsRecord": true
+        },
+        "dispatchCompanyList": {
+          "index": true
+        },
+        "caretakerList": {
+          "index": true
+        },
+        "fitnessDashboard": {
+          "index": true
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": true,
+          "profile": true,
+          "carePlan": true,
+          "regularEvaluationForm": true,
+          "pauseClose": true,
+          "hcCaseServiceRecord": true,
+          "hcCaseShift": true,
+          "hcAssessmentForm": true,
+          "hcWorkingRecord": true,
+          "hcPersonalizedServiceTime": true,
+          "familyContactForm": true,
+          "dcCaseShift": true,
+          "dcCaseServiceRecord": true,
+          "dcActivity": true,
+          "dcAssessmentForm": true,
+          "vitalSigns": true,
+          "eatingRecord": true,
+          "medicalRecommendation": true,
+          "tocc": true,
+          "familyEcologyMap": true,
+          "abnormalEvent": true,
+          "customerComplaint": true,
+          "expertCarePlan": true,
+          "dispatch": true,
+          "records": true,
+          "contractSetting": true,
+          "checkInOut": true,
+          "log": true
+        },
+        "contractManagement": {
+          "depositManagement": true,
+          "caseContract": true,
+          "companyContractsSetting": true
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": true,
+          "medicineUsageRecord": true,
+          "medicineManagement": true,
+          "medicineUsageSetting": true
+        },
+        "event": {
+          "abnormalEvent": true,
+          "customerComplaint": true
+        },
+        "calendar": {
+          "companyCalendar": true
+        },
+        "formRemind": {
+          "index": true
+        },
+        "companyCustomSetting": {
+          "profile": true,
+          "advanced": true,
+          "employeeRoleAndRight": true,
+          "formRight": true,
+          "systemConnect": true,
+          "cCodeSample": true,
+          "customerSatisfactionQRCode": true,
+          "accountClosure": true,
+          "serviceDefaultTime": true,
+          "holidayCalendar": true
+        },
+        "employee": {
+          "list": true,
+          "profile": true,
+          "hcEmployeeShift": true,
+          "dayoffRecord": true,
+          "customerSatisfaction": true,
+          "certification": true,
+          "hcEmployeeAssessmentForm": true,
+          "salarySettings": true,
+          "vitalSigns": true,
+          "tocc": true,
+          "footPrint": true,
+          "log": true
+        },
+        "dayCareEmployeeShiftList": {
+          "index": true
+        },
+        "groupManagement": {
+          "index": true
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": true,
+          "aCodeList": true
+        },
+        "salaryManagement": {
+          "general": true,
+          "monthlySalary": true,
+          "hourlySalary": true,
+          "splitBill": true,
+          "splitBillAboriginal": true,
+          "bathCarSplitBillRatio": true
+        },
+        "mealManagement": {
+          "weeklyMenu": true,
+          "dishManagement": true,
+          "dishCategory": true,
+          "ingredientsStore": true,
+          "ingredientsInOut": true,
+          "ingredientsCategory": true,
+          "mealPreference": true,
+          "mealStatistics": true,
+          "mealRecord": true,
+          "cleanRecord": true
+        },
+        "assetDevice": {
+          "assetManagement": true,
+          "deviceMaintenance": true
+        },
+        "locationManagement": {
+          "overview": true,
+          "basicInfo": true,
+          "assetDevice": true,
+          "IoTDevice": true
+        },
+        "productManagement": {
+          "list": true
+        },
+        "stockManagement": {
+          "commodityStock": true,
+          "warehouseStock": true,
+          "inAndOutWarehouse": true,
+          "inventory": true,
+          "warehouseManagement": true
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": true
+        },
+        "cleanManagement": {
+          "checkForm": true
+        },
+        "companyCarManagement": {
+          "list": true
+        },
+        "report": {
+          "hc": true,
+          "dc": true,
+          "acm": true
+        },
+        "eform": {
+          "index": true
+        },
+        "companyForm": {
+          "formTotal": true,
+          "assessmentForm": true
+        },
+        "customSetting": {
+          "customizedList": true,
+          "defaultHolidayCalendar": true,
+          "caseReceiptSetting": true
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": true,
+          "serviceDefaultRole": true,
+          "companyServiceSetting": true,
+          "companyFormRight": true
+        },
+        "log": {
+          "index": true
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    },
+    {
+      "code": "HC",
+      "name": "居家式",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": true
+        },
+        "hcShiftList": {
+          "index": true
+        },
+        "locationManager": {
+          "index": true
+        },
+        "supervisorVisitRecord": {
+          "index": true
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": true,
+          "footPrint": true,
+          "bodyTemperature": true,
+          "vaccineRecord": true
+        },
+        "writeOffHC": {
+          "fa100Upload": true,
+          "fa100Query": true,
+          "fa110Query": true,
+          "fa200Query": true,
+          "fa300Query": true
+        },
+        "daycaseService": {
+          "serviceRecord": false,
+          "vitalSigns": false
+        },
+        "daycaseShiftList": {
+          "index": false
+        },
+        "driverManager": {
+          "driverShiftTotal": false,
+          "driverShift": false,
+          "pickupOrder": false
+        },
+        "activityManager": {
+          "activityCalendar": false,
+          "activityRecord": false,
+          "activityPlan": false,
+          "groupManagement": false
+        },
+        "daycaseEvaluate": {
+          "preCaseList": false,
+          "preCaseProfile": false,
+          "consultForm": false,
+          "adaptEvaluationForm": false,
+          "referral": false
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffDC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": false,
+          "tourVisitorList": false,
+          "caseVisitorCalendar": false,
+          "caseVisitorList": false,
+          "tourVisitorReservation": false,
+          "bedBooking": false,
+          "depositManagement": false
+        },
+        "package": {
+          "packageManagement": false
+        },
+        "bedCalendar": {
+          "index": false
+        },
+        "rcShift": {
+          "shiftCalendar": false,
+          "shiftManagement": false,
+          "shiftHandover": false
+        },
+        "nursingCare": {
+          "nursingActivity": false,
+          "medicalAffairs": false,
+          "nursingRoundsRecord": false
+        },
+        "dispatchCompanyList": {
+          "index": false
+        },
+        "caretakerList": {
+          "index": false
+        },
+        "fitnessDashboard": {
+          "index": false
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": true,
+          "profile": true,
+          "carePlan": true,
+          "regularEvaluationForm": true,
+          "pauseClose": true,
+          "hcCaseServiceRecord": true,
+          "hcCaseShift": true,
+          "hcAssessmentForm": true,
+          "hcWorkingRecord": true,
+          "hcPersonalizedServiceTime": true,
+          "familyContactForm": false,
+          "dcCaseShift": false,
+          "dcCaseServiceRecord": false,
+          "dcActivity": false,
+          "dcAssessmentForm": false,
+          "vitalSigns": true,
+          "eatingRecord": true,
+          "medicalRecommendation": true,
+          "tocc": true,
+          "familyEcologyMap": true,
+          "abnormalEvent": false,
+          "customerComplaint": false,
+          "expertCarePlan": false,
+          "dispatch": false,
+          "records": false,
+          "contractSetting": false,
+          "checkInOut": false,
+          "log": true
+        },
+        "contractManagement": {
+          "depositManagement": false,
+          "caseContract": false,
+          "companyContractsSetting": false
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": false,
+          "medicineUsageRecord": false,
+          "medicineManagement": false,
+          "medicineUsageSetting": false
+        },
+        "event": {
+          "abnormalEvent": false,
+          "customerComplaint": false
+        },
+        "calendar": {
+          "companyCalendar": true
+        },
+        "formRemind": {
+          "index": true
+        },
+        "companyCustomSetting": {
+          "profile": true,
+          "advanced": true,
+          "employeeRoleAndRight": true,
+          "formRight": true,
+          "systemConnect": false,
+          "cCodeSample": true,
+          "customerSatisfactionQRCode": true,
+          "accountClosure": true,
+          "serviceDefaultTime": true,
+          "holidayCalendar": true
+        },
+        "employee": {
+          "list": true,
+          "profile": true,
+          "hcEmployeeShift": true,
+          "dayoffRecord": true,
+          "customerSatisfaction": true,
+          "certification": true,
+          "hcEmployeeAssessmentForm": true,
+          "salarySettings": true,
+          "vitalSigns": true,
+          "tocc": true,
+          "footPrint": true,
+          "log": true
+        },
+        "dayCareEmployeeShiftList": {
+          "index": false
+        },
+        "groupManagement": {
+          "index": false
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": true,
+          "aCodeList": true
+        },
+        "salaryManagement": {
+          "general": true,
+          "monthlySalary": true,
+          "hourlySalary": true,
+          "splitBill": true,
+          "splitBillAboriginal": true,
+          "bathCarSplitBillRatio": true
+        },
+        "mealManagement": {
+          "weeklyMenu": false,
+          "dishManagement": false,
+          "dishCategory": false,
+          "ingredientsStore": false,
+          "ingredientsInOut": false,
+          "ingredientsCategory": false,
+          "mealPreference": false,
+          "mealStatistics": false,
+          "mealRecord": false,
+          "cleanRecord": false
+        },
+        "assetDevice": {
+          "assetManagement": true,
+          "deviceMaintenance": true
+        },
+        "locationManagement": {
+          "overview": true,
+          "basicInfo": true,
+          "assetDevice": true,
+          "IoTDevice": true
+        },
+        "productManagement": {
+          "list": true
+        },
+        "stockManagement": {
+          "commodityStock": true,
+          "warehouseStock": true,
+          "inAndOutWarehouse": true,
+          "inventory": true,
+          "warehouseManagement": true
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": true
+        },
+        "cleanManagement": {
+          "checkForm": false
+        },
+        "companyCarManagement": {
+          "list": false
+        },
+        "report": {
+          "hc": true,
+          "dc": false,
+          "a": false
+        },
+        "eform": {
+          "index": false
+        },
+        "companyForm": {
+          "formTotal": true,
+          "assessmentForm": true
+        },
+        "customSetting": {
+          "customizedList": false,
+          "defaultHolidayCalendar": false,
+          "caseReceiptSetting": false
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": false,
+          "serviceDefaultRole": false,
+          "companyServiceSetting": false,
+          "companyFormRight": false
+        },
+        "log": {
+          "index": false
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    },
+    {
+      "code": "DC",
+      "name": "社區式",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": false
+        },
+        "hcShiftList": {
+          "index": false
+        },
+        "locationManager": {
+          "index": false
+        },
+        "supervisorVisitRecord": {
+          "index": false
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffHC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "daycaseService": {
+          "serviceRecord": true,
+          "vitalSigns": true
+        },
+        "daycaseShiftList": {
+          "index": true
+        },
+        "driverManager": {
+          "driverShiftTotal": true,
+          "driverShift": true,
+          "pickupOrder": true
+        },
+        "activityManager": {
+          "activityCalendar": true,
+          "activityRecord": true,
+          "activityPlan": true,
+          "groupManagement": true
+        },
+        "daycaseEvaluate": {
+          "preCaseList": true,
+          "preCaseProfile": true,
+          "consultForm": true,
+          "adaptEvaluationForm": true,
+          "referral": true
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": true,
+          "footPrint": true,
+          "bodyTemperature": true,
+          "vaccineRecord": true
+        },
+        "writeOffDC": {
+          "fa100Upload": true,
+          "fa100Query": true,
+          "fa110Query": true,
+          "fa200Query": true,
+          "fa300Query": true
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": true,
+          "tourVisitorList": true,
+          "caseVisitorCalendar": true,
+          "caseVisitorList": true,
+          "tourVisitorReservation": true,
+          "bedBooking": true,
+          "depositManagement": true
+        },
+        "package": {
+          "packageManagement": true
+        },
+        "bedCalendar": {
+          "index": false
+        },
+        "rcShift": {
+          "shiftCalendar": true,
+          "shiftManagement": true,
+          "shiftHandover": true
+        },
+        "nursingCare": {
+          "nursingActivity": true,
+          "medicalAffairs": true,
+          "nursingRoundsRecord": true
+        },
+        "dispatchCompanyList": {
+          "index": false
+        },
+        "caretakerList": {
+          "index": false
+        },
+        "fitnessDashboard": {
+          "index": false
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": true,
+          "profile": true,
+          "carePlan": true,
+          "regularEvaluationForm": true,
+          "pauseClose": true,
+          "hcCaseServiceRecord": false,
+          "hcCaseShift": false,
+          "hcAssessmentForm": false,
+          "hcWorkingRecord": false,
+          "hcPersonalizedServiceTime": false,
+          "familyContactForm": true,
+          "dcCaseShift": true,
+          "dcCaseServiceRecord": true,
+          "dcActivity": true,
+          "dcAssessmentForm": true,
+          "vitalSigns": true,
+          "eatingRecord": true,
+          "medicalRecommendation": true,
+          "tocc": true,
+          "familyEcologyMap": true,
+          "abnormalEvent": true,
+          "customerComplaint": true,
+          "expertCarePlan": true,
+          "dispatch": false,
+          "records": false,
+          "contractSetting": true,
+          "checkInOut": true,
+          "log": true
+        },
+        "contractManagement": {
+          "depositManagement": true,
+          "caseContract": true,
+          "companyContractsSetting": true
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": true,
+          "medicineUsageRecord": true,
+          "medicineManagement": true,
+          "medicineUsageSetting": true
+        },
+        "event": {
+          "abnormalEvent": true,
+          "customerComplaint": true
+        },
+        "calendar": {
+          "companyCalendar": true
+        },
+        "formRemind": {
+          "index": true
+        },
+        "companyCustomSetting": {
+          "profile": true,
+          "advanced": true,
+          "employeeRoleAndRight": true,
+          "formRight": true,
+          "systemConnect": false,
+          "cCodeSample": false,
+          "customerSatisfactionQRCode": false,
+          "accountClosure": true,
+          "serviceDefaultTime": true,
+          "holidayCalendar": true
+        },
+        "employee": {
+          "list": true,
+          "profile": true,
+          "hcEmployeeShift": false,
+          "dayoffRecord": false,
+          "customerSatisfaction": false,
+          "certification": false,
+          "hcEmployeeAssessmentForm": false,
+          "salarySettings": false,
+          "vitalSigns": false,
+          "tocc": false,
+          "footPrint": false,
+          "log": false
+        },
+        "dayCareEmployeeShiftList": {
+          "index": true
+        },
+        "groupManagement": {
+          "index": false
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": true,
+          "aCodeList": true
+        },
+        "salaryManagement": {
+          "general": true,
+          "monthlySalary": true,
+          "hourlySalary": true,
+          "splitBill": true,
+          "splitBillAboriginal": true,
+          "bathCarSplitBillRatio": true
+        },
+        "mealManagement": {
+          "weeklyMenu": true,
+          "dishManagement": true,
+          "dishCategory": true,
+          "ingredientsStore": true,
+          "ingredientsInOut": true,
+          "ingredientsCategory": true,
+          "mealPreference": true,
+          "mealStatistics": true,
+          "mealRecord": true,
+          "cleanRecord": true
+        },
+        "assetDevice": {
+          "assetManagement": true,
+          "deviceMaintenance": true
+        },
+        "locationManagement": {
+          "overview": true,
+          "basicInfo": true,
+          "assetDevice": true,
+          "IoTDevice": true
+        },
+        "productManagement": {
+          "list": true
+        },
+        "stockManagement": {
+          "commodityStock": true,
+          "warehouseStock": true,
+          "inAndOutWarehouse": true,
+          "inventory": true,
+          "warehouseManagement": true
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": true
+        },
+        "cleanManagement": {
+          "checkForm": true
+        },
+        "companyCarManagement": {
+          "list": true
+        },
+        "report": {
+          "hc": false,
+          "dc": true,
+          "acm": false
+        },
+        "eform": {
+          "index": false
+        },
+        "companyForm": {
+          "formTotal": false,
+          "assessmentForm": false
+        },
+        "customSetting": {
+          "customizedList": false,
+          "defaultHolidayCalendar": false,
+          "caseReceiptSetting": false
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": false,
+          "serviceDefaultRole": false,
+          "companyServiceSetting": false,
+          "companyFormRight": false
+        },
+        "log": {
+          "index": false
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    },
+    {
+      "code": "HC-Lite",
+      "name": "居家式-輕量版",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": false
+        },
+        "hcShiftList": {
+          "index": false
+        },
+        "locationManager": {
+          "index": false
+        },
+        "supervisorVisitRecord": {
+          "index": false
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffHC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "daycaseService": {
+          "serviceRecord": false,
+          "vitalSigns": false
+        },
+        "daycaseShiftList": {
+          "index": false
+        },
+        "driverManager": {
+          "driverShiftTotal": false,
+          "driverShift": false,
+          "pickupOrder": false
+        },
+        "activityManager": {
+          "activityCalendar": false,
+          "activityRecord": false,
+          "activityPlan": false,
+          "groupManagement": false
+        },
+        "daycaseEvaluate": {
+          "preCaseList": false,
+          "preCaseProfile": false,
+          "consultForm": false,
+          "adaptEvaluationForm": false,
+          "referral": false
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffDC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": false,
+          "tourVisitorList": false,
+          "caseVisitorCalendar": false,
+          "caseVisitorList": false,
+          "tourVisitorReservation": false,
+          "bedBooking": false,
+          "depositManagement": false
+        },
+        "package": {
+          "packageManagement": false
+        },
+        "bedCalendar": {
+          "index": false
+        },
+        "rcShift": {
+          "shiftCalendar": false,
+          "shiftManagement": false,
+          "shiftHandover": false
+        },
+        "nursingCare": {
+          "nursingActivity": false,
+          "medicalAffairs": false,
+          "nursingRoundsRecord": false
+        },
+        "dispatchCompanyList": {
+          "index": false
+        },
+        "caretakerList": {
+          "index": false
+        },
+        "fitnessDashboard": {
+          "index": false
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": false,
+          "profile": false,
+          "carePlan": false,
+          "regularEvaluationForm": false,
+          "pauseClose": false,
+          "hcCaseServiceRecord": false,
+          "hcCaseShift": false,
+          "hcAssessmentForm": false,
+          "hcWorkingRecord": false,
+          "hcPersonalizedServiceTime": false,
+          "familyContactForm": false,
+          "dcCaseShift": false,
+          "dcCaseServiceRecord": false,
+          "dcActivity": false,
+          "dcAssessmentForm": false,
+          "vitalSigns": false,
+          "eatingRecord": false,
+          "medicalRecommendation": false,
+          "tocc": false,
+          "familyEcologyMap": false,
+          "abnormalEvent": false,
+          "customerComplaint": false,
+          "expertCarePlan": false,
+          "dispatch": false,
+          "records": false,
+          "contractSetting": false,
+          "checkInOut": false,
+          "log": false
+        },
+        "contractManagement": {
+          "depositManagement": false,
+          "caseContract": false,
+          "companyContractsSetting": false
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": false,
+          "medicineUsageRecord": false,
+          "medicineManagement": false,
+          "medicineUsageSetting": false
+        },
+        "event": {
+          "abnormalEvent": false,
+          "customerComplaint": false
+        },
+        "calendar": {
+          "companyCalendar": false
+        },
+        "formRemind": {
+          "index": false
+        },
+        "companyCustomSetting": {
+          "profile": false,
+          "advanced": false,
+          "employeeRoleAndRight": false,
+          "formRight": false,
+          "systemConnect": false,
+          "cCodeSample": false,
+          "customerSatisfactionQRCode": false,
+          "accountClosure": false,
+          "serviceDefaultTime": false,
+          "holidayCalendar": false
+        },
+        "employee": {
+          "list": false,
+          "profile": false,
+          "hcEmployeeShift": false,
+          "dayoffRecord": false,
+          "customerSatisfaction": false,
+          "certification": false,
+          "hcEmployeeAssessmentForm": false,
+          "salarySettings": false,
+          "vitalSigns": false,
+          "tocc": false,
+          "footPrint": false,
+          "log": false
+        },
+        "dayCareEmployeeShiftList": {
+          "index": false
+        },
+        "groupManagement": {
+          "index": false
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": false,
+          "aCodeList": false
+        },
+        "salaryManagement": {
+          "general": false,
+          "monthlySalary": false,
+          "hourlySalary": false,
+          "splitBill": false,
+          "splitBillAboriginal": false,
+          "bathCarSplitBillRatio": false
+        },
+        "mealManagement": {
+          "weeklyMenu": false,
+          "dishManagement": false,
+          "dishCategory": false,
+          "ingredientsStore": false,
+          "ingredientsInOut": false,
+          "ingredientsCategory": false,
+          "mealPreference": false,
+          "mealStatistics": false,
+          "mealRecord": false,
+          "cleanRecord": false
+        },
+        "assetDevice": {
+          "assetManagement": false,
+          "deviceMaintenance": false
+        },
+        "locationManagement": {
+          "overview": false,
+          "basicInfo": false,
+          "assetDevice": false,
+          "IoTDevice": false
+        },
+        "productManagement": {
+          "list": false
+        },
+        "stockManagement": {
+          "commodityStock": false,
+          "warehouseStock": false,
+          "inAndOutWarehouse": false,
+          "inventory": false,
+          "warehouseManagement": false
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": false
+        },
+        "cleanManagement": {
+          "checkForm": false
+        },
+        "companyCarManagement": {
+          "list": false
+        },
+        "report": {
+          "hc": false,
+          "dc": false,
+          "a": false
+        },
+        "eform": {
+          "index": false
+        },
+        "companyForm": {
+          "formTotal": false,
+          "assessmentForm": false
+        },
+        "customSetting": {
+          "customizedList": false,
+          "defaultHolidayCalendar": false,
+          "caseReceiptSetting": false
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": false,
+          "serviceDefaultRole": false,
+          "companyServiceSetting": false,
+          "companyFormRight": false
+        },
+        "log": {
+          "index": false
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    },
+    {
+      "code": "ACM",
+      "name": "A個管",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": false
+        },
+        "hcShiftList": {
+          "index": false
+        },
+        "locationManager": {
+          "index": false
+        },
+        "supervisorVisitRecord": {
+          "index": false
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffHC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "daycaseService": {
+          "serviceRecord": false,
+          "vitalSigns": false
+        },
+        "daycaseShiftList": {
+          "index": false
+        },
+        "driverManager": {
+          "driverShiftTotal": false,
+          "driverShift": false,
+          "pickupOrder": false
+        },
+        "activityManager": {
+          "activityCalendar": false,
+          "activityRecord": false,
+          "activityPlan": false,
+          "groupManagement": false
+        },
+        "daycaseEvaluate": {
+          "preCaseList": false,
+          "preCaseProfile": false,
+          "consultForm": false,
+          "adaptEvaluationForm": false,
+          "referral": false
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffDC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": false,
+          "tourVisitorList": false,
+          "caseVisitorCalendar": false,
+          "caseVisitorList": false,
+          "tourVisitorReservation": false,
+          "bedBooking": false,
+          "depositManagement": false
+        },
+        "package": {
+          "packageManagement": false
+        },
+        "bedCalendar": {
+          "index": false
+        },
+        "rcShift": {
+          "shiftCalendar": false,
+          "shiftManagement": false,
+          "shiftHandover": false
+        },
+        "nursingCare": {
+          "nursingActivity": false,
+          "medicalAffairs": false,
+          "nursingRoundsRecord": false
+        },
+        "dispatchCompanyList": {
+          "index": true
+        },
+        "caretakerList": {
+          "index": true
+        },
+        "fitnessDashboard": {
+          "index": false
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": true,
+          "profile": true,
+          "carePlan": true,
+          "regularEvaluationForm": true,
+          "pauseClose": true,
+          "hcCaseServiceRecord": false,
+          "hcCaseShift": false,
+          "hcAssessmentForm": false,
+          "hcWorkingRecord": false,
+          "hcPersonalizedServiceTime": false,
+          "familyContactForm": false,
+          "dcCaseShift": false,
+          "dcCaseServiceRecord": false,
+          "dcActivity": false,
+          "dcAssessmentForm": false,
+          "vitalSigns": false,
+          "eatingRecord": false,
+          "medicalRecommendation": false,
+          "tocc": false,
+          "familyEcologyMap": false,
+          "abnormalEvent": false,
+          "customerComplaint": false,
+          "expertCarePlan": false,
+          "dispatch": true,
+          "records": false,
+          "contractSetting": false,
+          "checkInOut": false,
+          "log": false
+        },
+        "contractManagement": {
+          "depositManagement": false,
+          "caseContract": false,
+          "companyContractsSetting": false
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": false,
+          "medicineUsageRecord": false,
+          "medicineManagement": false,
+          "medicineUsageSetting": false
+        },
+        "event": {
+          "abnormalEvent": false,
+          "customerComplaint": false
+        },
+        "calendar": {
+          "companyCalendar": true
+        },
+        "formRemind": {
+          "index": false
+        },
+        "companyCustomSetting": {
+          "profile": true,
+          "advanced": true,
+          "employeeRoleAndRight": true,
+          "formRight": true,
+          "systemConnect": false,
+          "cCodeSample": false,
+          "customerSatisfactionQRCode": false,
+          "accountClosure": true,
+          "serviceDefaultTime": true,
+          "holidayCalendar": true
+        },
+        "employee": {
+          "list": true,
+          "profile": true,
+          "hcEmployeeShift": false,
+          "dayoffRecord": false,
+          "customerSatisfaction": true,
+          "certification": true,
+          "hcEmployeeAssessmentForm": false,
+          "salarySettings": true,
+          "vitalSigns": true,
+          "tocc": true,
+          "footPrint": true,
+          "log": true
+        },
+        "dayCareEmployeeShiftList": {
+          "index": false
+        },
+        "groupManagement": {
+          "index": false
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": false,
+          "aCodeList": false
+        },
+        "salaryManagement": {
+          "general": false,
+          "monthlySalary": false,
+          "hourlySalary": false,
+          "splitBill": false,
+          "splitBillAboriginal": false,
+          "bathCarSplitBillRatio": false
+        },
+        "mealManagement": {
+          "weeklyMenu": false,
+          "dishManagement": false,
+          "dishCategory": false,
+          "ingredientsStore": false,
+          "ingredientsInOut": false,
+          "ingredientsCategory": false,
+          "mealPreference": false,
+          "mealStatistics": false,
+          "mealRecord": false,
+          "cleanRecord": false
+        },
+        "assetDevice": {
+          "assetManagement": true,
+          "deviceMaintenance": true
+        },
+        "locationManagement": {
+          "overview": true,
+          "basicInfo": true,
+          "assetDevice": true,
+          "IoTDevice": true
+        },
+        "productManagement": {
+          "list": false
+        },
+        "stockManagement": {
+          "commodityStock": false,
+          "warehouseStock": false,
+          "inAndOutWarehouse": false,
+          "inventory": false,
+          "warehouseManagement": false
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": true
+        },
+        "cleanManagement": {
+          "checkForm": false
+        },
+        "companyCarManagement": {
+          "list": false
+        },
+        "report": {
+          "hc": false,
+          "dc": false,
+          "a": true
+        },
+        "eform": {
+          "index": false
+        },
+        "companyForm": {
+          "formTotal": false,
+          "assessmentForm": false
+        },
+        "customSetting": {
+          "customizedList": false,
+          "defaultHolidayCalendar": false,
+          "caseReceiptSetting": false
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": false,
+          "serviceDefaultRole": false,
+          "companyServiceSetting": false,
+          "companyFormRight": false
+        },
+        "log": {
+          "index": false
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    },
+    {
+      "code": "RC",
+      "name": "住宿式",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": false
+        },
+        "hcShiftList": {
+          "index": false
+        },
+        "locationManager": {
+          "index": false
+        },
+        "supervisorVisitRecord": {
+          "index": false
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffHC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "daycaseService": {
+          "serviceRecord": false,
+          "vitalSigns": false
+        },
+        "daycaseShiftList": {
+          "index": false
+        },
+        "driverManager": {
+          "driverShiftTotal": false,
+          "driverShift": false,
+          "pickupOrder": false
+        },
+        "activityManager": {
+          "activityCalendar": false,
+          "activityRecord": false,
+          "activityPlan": false,
+          "groupManagement": false
+        },
+        "daycaseEvaluate": {
+          "preCaseList": false,
+          "preCaseProfile": false,
+          "consultForm": false,
+          "adaptEvaluationForm": false,
+          "referral": false
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffDC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": true,
+          "tourVisitorList": true,
+          "caseVisitorCalendar": true,
+          "caseVisitorList": true,
+          "tourVisitorReservation": true,
+          "bedBooking": true,
+          "depositManagement": true
+        },
+        "package": {
+          "packageManagement": true
+        },
+        "bedCalendar": {
+          "index": true
+        },
+        "rcShift": {
+          "shiftCalendar": true,
+          "shiftManagement": true,
+          "shiftHandover": true
+        },
+        "nursingCare": {
+          "nursingActivity": true,
+          "medicalAffairs": true,
+          "nursingRoundsRecord": true
+        },
+        "dispatchCompanyList": {
+          "index": false
+        },
+        "caretakerList": {
+          "index": false
+        },
+        "fitnessDashboard": {
+          "index": false
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": true,
+          "profile": true,
+          "carePlan": true,
+          "regularEvaluationForm": true,
+          "pauseClose": false,
+          "hcCaseServiceRecord": false,
+          "hcCaseShift": false,
+          "hcAssessmentForm": false,
+          "hcWorkingRecord": false,
+          "hcPersonalizedServiceTime": false,
+          "familyContactForm": false,
+          "dcCaseShift": false,
+          "dcCaseServiceRecord": false,
+          "dcActivity": false,
+          "dcAssessmentForm": false,
+          "vitalSigns": true,
+          "eatingRecord": true,
+          "medicalRecommendation": false,
+          "tocc": false,
+          "familyEcologyMap": false,
+          "abnormalEvent": true,
+          "customerComplaint": true,
+          "expertCarePlan": true,
+          "dispatch": false,
+          "records": true,
+          "contractSetting": true,
+          "checkInOut": true,
+          "log": true
+        },
+        "contractManagement": {
+          "depositManagement": true,
+          "caseContract": true,
+          "companyContractsSetting": true
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": true,
+          "medicineUsageRecord": true,
+          "medicineManagement": true,
+          "medicineUsageSetting": true
+        },
+        "event": {
+          "abnormalEvent": true,
+          "customerComplaint": true
+        },
+        "calendar": {
+          "companyCalendar": true
+        },
+        "formRemind": {
+          "index": false
+        },
+        "companyCustomSetting": {
+          "profile": true,
+          "advanced": true,
+          "employeeRoleAndRight": true,
+          "formRight": true,
+          "systemConnect": false,
+          "cCodeSample": false,
+          "customerSatisfactionQRCode": false,
+          "accountClosure": false,
+          "serviceDefaultTime": false,
+          "holidayCalendar": true
+        },
+        "employee": {
+          "list": true,
+          "profile": true,
+          "hcEmployeeShift": false,
+          "dayoffRecord": false,
+          "customerSatisfaction": false,
+          "certification": false,
+          "hcEmployeeAssessmentForm": false,
+          "salarySettings": false,
+          "vitalSigns": false,
+          "tocc": false,
+          "footPrint": false,
+          "log": false
+        },
+        "dayCareEmployeeShiftList": {
+          "index": false
+        },
+        "groupManagement": {
+          "index": false
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": true,
+          "aCodeList": true
+        },
+        "salaryManagement": {
+          "general": false,
+          "monthlySalary": false,
+          "hourlySalary": false,
+          "splitBill": false,
+          "splitBillAboriginal": false,
+          "bathCarSplitBillRatio": false
+        },
+        "mealManagement": {
+          "weeklyMenu": true,
+          "dishManagement": true,
+          "dishCategory": true,
+          "ingredientsStore": true,
+          "ingredientsInOut": true,
+          "ingredientsCategory": true,
+          "mealPreference": true,
+          "mealStatistics": true,
+          "mealRecord": true,
+          "cleanRecord": true
+        },
+        "assetDevice": {
+          "assetManagement": true,
+          "deviceMaintenance": true
+        },
+        "locationManagement": {
+          "overview": true,
+          "basicInfo": true,
+          "assetDevice": true,
+          "IoTDevice": true
+        },
+        "productManagement": {
+          "list": true
+        },
+        "stockManagement": {
+          "commodityStock": true,
+          "warehouseStock": true,
+          "inAndOutWarehouse": true,
+          "inventory": true,
+          "warehouseManagement": true
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": true
+        },
+        "cleanManagement": {
+          "checkForm": true
+        },
+        "companyCarManagement": {
+          "list": true
+        },
+        "report": {
+          "hc": false,
+          "dc": false,
+          "a": false
+        },
+        "eform": {
+          "index": false
+        },
+        "companyForm": {
+          "formTotal": false,
+          "assessmentForm": false
+        },
+        "customSetting": {
+          "customizedList": false,
+          "defaultHolidayCalendar": false,
+          "caseReceiptSetting": false
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": false,
+          "serviceDefaultRole": false,
+          "companyServiceSetting": false,
+          "companyFormRight": false
+        },
+        "log": {
+          "index": false
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    },
+    {
+      "code": "PF",
+      "name": "體適能",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": false
+        },
+        "hcShiftList": {
+          "index": false
+        },
+        "locationManager": {
+          "index": false
+        },
+        "supervisorVisitRecord": {
+          "index": false
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffHC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "daycaseService": {
+          "serviceRecord": false,
+          "vitalSigns": false
+        },
+        "daycaseShiftList": {
+          "index": false
+        },
+        "driverManager": {
+          "driverShiftTotal": false,
+          "driverShift": false,
+          "pickupOrder": false
+        },
+        "activityManager": {
+          "activityCalendar": false,
+          "activityRecord": false,
+          "activityPlan": false,
+          "groupManagement": false
+        },
+        "daycaseEvaluate": {
+          "preCaseList": false,
+          "preCaseProfile": false,
+          "consultForm": false,
+          "adaptEvaluationForm": false,
+          "referral": false
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffDC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": false,
+          "tourVisitorList": false,
+          "caseVisitorCalendar": false,
+          "caseVisitorList": false,
+          "tourVisitorReservation": false,
+          "bedBooking": false,
+          "depositManagement": false
+        },
+        "package": {
+          "packageManagement": false
+        },
+        "bedCalendar": {
+          "index": false
+        },
+        "rcShift": {
+          "shiftCalendar": false,
+          "shiftManagement": false,
+          "shiftHandover": false
+        },
+        "nursingCare": {
+          "nursingActivity": false,
+          "medicalAffairs": false,
+          "nursingRoundsRecord": false
+        },
+        "dispatchCompanyList": {
+          "index": false
+        },
+        "caretakerList": {
+          "index": false
+        },
+        "fitnessDashboard": {
+          "index": false
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": false,
+          "profile": false,
+          "carePlan": false,
+          "regularEvaluationForm": false,
+          "pauseClose": false,
+          "hcCaseServiceRecord": false,
+          "hcCaseShift": false,
+          "hcAssessmentForm": false,
+          "hcWorkingRecord": false,
+          "hcPersonalizedServiceTime": false,
+          "familyContactForm": false,
+          "dcCaseShift": false,
+          "dcCaseServiceRecord": false,
+          "dcActivity": false,
+          "dcAssessmentForm": false,
+          "vitalSigns": false,
+          "eatingRecord": false,
+          "medicalRecommendation": false,
+          "tocc": false,
+          "familyEcologyMap": false,
+          "abnormalEvent": false,
+          "customerComplaint": false,
+          "expertCarePlan": false,
+          "dispatch": false,
+          "records": false,
+          "contractSetting": false,
+          "checkInOut": false,
+          "log": false
+        },
+        "contractManagement": {
+          "depositManagement": false,
+          "caseContract": false,
+          "companyContractsSetting": false
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": false,
+          "medicineUsageRecord": false,
+          "medicineManagement": false,
+          "medicineUsageSetting": false
+        },
+        "event": {
+          "abnormalEvent": false,
+          "customerComplaint": false
+        },
+        "calendar": {
+          "companyCalendar": false
+        },
+        "formRemind": {
+          "index": false
+        },
+        "companyCustomSetting": {
+          "profile": false,
+          "advanced": false,
+          "employeeRoleAndRight": false,
+          "formRight": false,
+          "systemConnect": false,
+          "cCodeSample": false,
+          "customerSatisfactionQRCode": false,
+          "accountClosure": false,
+          "serviceDefaultTime": false,
+          "holidayCalendar": false
+        },
+        "employee": {
+          "list": false,
+          "profile": false,
+          "hcEmployeeShift": false,
+          "dayoffRecord": false,
+          "customerSatisfaction": false,
+          "certification": false,
+          "hcEmployeeAssessmentForm": false,
+          "salarySettings": false,
+          "vitalSigns": false,
+          "tocc": false,
+          "footPrint": false,
+          "log": false
+        },
+        "dayCareEmployeeShiftList": {
+          "index": false
+        },
+        "groupManagement": {
+          "index": false
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": false,
+          "aCodeList": false
+        },
+        "salaryManagement": {
+          "general": false,
+          "monthlySalary": false,
+          "hourlySalary": false,
+          "splitBill": false,
+          "splitBillAboriginal": false,
+          "bathCarSplitBillRatio": false
+        },
+        "mealManagement": {
+          "weeklyMenu": false,
+          "dishManagement": false,
+          "dishCategory": false,
+          "ingredientsStore": false,
+          "ingredientsInOut": false,
+          "ingredientsCategory": false,
+          "mealPreference": false,
+          "mealStatistics": false,
+          "mealRecord": false,
+          "cleanRecord": false
+        },
+        "assetDevice": {
+          "assetManagement": false,
+          "deviceMaintenance": false
+        },
+        "locationManagement": {
+          "overview": false,
+          "basicInfo": false,
+          "assetDevice": false,
+          "IoTDevice": false
+        },
+        "productManagement": {
+          "list": false
+        },
+        "stockManagement": {
+          "commodityStock": false,
+          "warehouseStock": false,
+          "inAndOutWarehouse": false,
+          "inventory": false,
+          "warehouseManagement": false
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": false
+        },
+        "cleanManagement": {
+          "checkForm": false
+        },
+        "companyCarManagement": {
+          "list": false
+        },
+        "report": {
+          "hc": false,
+          "dc": false,
+          "a": false
+        },
+        "eform": {
+          "index": false
+        },
+        "companyForm": {
+          "formTotal": false,
+          "assessmentForm": false
+        },
+        "customSetting": {
+          "customizedList": false,
+          "defaultHolidayCalendar": false,
+          "caseReceiptSetting": false
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": false,
+          "serviceDefaultRole": false,
+          "companyServiceSetting": false,
+          "companyFormRight": false
+        },
+        "log": {
+          "index": false
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    },
+    {
+      "code": "HC+DC",
+      "name": "居家式+社區式",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": true
+        },
+        "hcShiftList": {
+          "index": true
+        },
+        "locationManager": {
+          "index": true
+        },
+        "supervisorVisitRecord": {
+          "index": true
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": true,
+          "footPrint": true,
+          "bodyTemperature": true,
+          "vaccineRecord": true
+        },
+        "writeOffHC": {
+          "fa100Upload": true,
+          "fa100Query": true,
+          "fa110Query": true,
+          "fa200Query": true,
+          "fa300Query": true
+        },
+        "daycaseService": {
+          "serviceRecord": true,
+          "vitalSigns": true
+        },
+        "daycaseShiftList": {
+          "index": true
+        },
+        "driverManager": {
+          "driverShiftTotal": true,
+          "driverShift": true,
+          "pickupOrder": true
+        },
+        "activityManager": {
+          "activityCalendar": true,
+          "activityRecord": true,
+          "activityPlan": true,
+          "groupManagement": true
+        },
+        "daycaseEvaluate": {
+          "preCaseList": true,
+          "preCaseProfile": true,
+          "consultForm": true,
+          "adaptEvaluationForm": true,
+          "referral": true
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": true,
+          "footPrint": true,
+          "bodyTemperature": true,
+          "vaccineRecord": true
+        },
+        "writeOffDC": {
+          "fa100Upload": true,
+          "fa100Query": true,
+          "fa110Query": true,
+          "fa200Query": true,
+          "fa300Query": true
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": true,
+          "tourVisitorList": true,
+          "caseVisitorCalendar": true,
+          "caseVisitorList": true,
+          "tourVisitorReservation": true,
+          "bedBooking": true,
+          "depositManagement": true
+        },
+        "package": {
+          "packageManagement": true
+        },
+        "bedCalendar": {
+          "index": false
+        },
+        "rcShift": {
+          "shiftCalendar": true,
+          "shiftManagement": true,
+          "shiftHandover": true
+        },
+        "nursingCare": {
+          "nursingActivity": true,
+          "medicalAffairs": true,
+          "nursingRoundsRecord": true
+        },
+        "dispatchCompanyList": {
+          "index": false
+        },
+        "caretakerList": {
+          "index": false
+        },
+        "fitnessDashboard": {
+          "index": false
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": true,
+          "profile": true,
+          "carePlan": true,
+          "regularEvaluationForm": true,
+          "pauseClose": true,
+          "hcCaseServiceRecord": true,
+          "hcCaseShift": true,
+          "hcAssessmentForm": true,
+          "hcWorkingRecord": true,
+          "hcPersonalizedServiceTime": true,
+          "familyContactForm": true,
+          "dcCaseShift": true,
+          "dcCaseServiceRecord": true,
+          "dcActivity": true,
+          "dcAssessmentForm": true,
+          "vitalSigns": true,
+          "eatingRecord": true,
+          "medicalRecommendation": true,
+          "tocc": true,
+          "familyEcologyMap": true,
+          "abnormalEvent": true,
+          "customerComplaint": true,
+          "expertCarePlan": true,
+          "dispatch": false,
+          "records": false,
+          "contractSetting": true,
+          "checkInOut": true,
+          "log": true
+        },
+        "contractManagement": {
+          "depositManagement": true,
+          "caseContract": true,
+          "companyContractsSetting": true
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": true,
+          "medicineUsageRecord": true,
+          "medicineManagement": true,
+          "medicineUsageSetting": true
+        },
+        "event": {
+          "abnormalEvent": true,
+          "customerComplaint": true
+        },
+        "calendar": {
+          "companyCalendar": true
+        },
+        "formRemind": {
+          "index": true
+        },
+        "companyCustomSetting": {
+          "profile": true,
+          "advanced": true,
+          "employeeRoleAndRight": true,
+          "formRight": true,
+          "systemConnect": false,
+          "cCodeSample": true,
+          "customerSatisfactionQRCode": true,
+          "accountClosure": true,
+          "serviceDefaultTime": true,
+          "holidayCalendar": true
+        },
+        "employee": {
+          "list": true,
+          "profile": true,
+          "hcEmployeeShift": true,
+          "dayoffRecord": true,
+          "customerSatisfaction": true,
+          "certification": true,
+          "hcEmployeeAssessmentForm": true,
+          "salarySettings": true,
+          "vitalSigns": true,
+          "tocc": true,
+          "footPrint": true,
+          "log": true
+        },
+        "dayCareEmployeeShiftList": {
+          "index": true
+        },
+        "groupManagement": {
+          "index": false
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": true,
+          "aCodeList": true
+        },
+        "salaryManagement": {
+          "general": true,
+          "monthlySalary": true,
+          "hourlySalary": true,
+          "splitBill": true,
+          "splitBillAboriginal": true,
+          "bathCarSplitBillRatio": true
+        },
+        "mealManagement": {
+          "weeklyMenu": true,
+          "dishManagement": true,
+          "dishCategory": true,
+          "ingredientsStore": true,
+          "ingredientsInOut": true,
+          "ingredientsCategory": true,
+          "mealPreference": true,
+          "mealStatistics": true,
+          "mealRecord": true,
+          "cleanRecord": true
+        },
+        "assetDevice": {
+          "assetManagement": true,
+          "deviceMaintenance": true
+        },
+        "locationManagement": {
+          "overview": true,
+          "basicInfo": true,
+          "assetDevice": true,
+          "IoTDevice": true
+        },
+        "productManagement": {
+          "list": true
+        },
+        "stockManagement": {
+          "commodityStock": true,
+          "warehouseStock": true,
+          "inAndOutWarehouse": true,
+          "inventory": true,
+          "warehouseManagement": true
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": true
+        },
+        "cleanManagement": {
+          "checkForm": true
+        },
+        "companyCarManagement": {
+          "list": true
+        },
+        "report": {
+          "hc": true,
+          "dc": true,
+          "acm": false
+        },
+        "eform": {
+          "index": false
+        },
+        "companyForm": {
+          "formTotal": true,
+          "assessmentForm": true
+        },
+        "customSetting": {
+          "customizedList": false,
+          "defaultHolidayCalendar": false,
+          "caseReceiptSetting": false
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": false,
+          "serviceDefaultRole": false,
+          "companyServiceSetting": false,
+          "companyFormRight": false
+        },
+        "log": {
+          "index": false
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    },
+    {
+      "code": "DC+RC",
+      "name": "社區式+住宿式",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": false
+        },
+        "hcShiftList": {
+          "index": false
+        },
+        "locationManager": {
+          "index": false
+        },
+        "supervisorVisitRecord": {
+          "index": false
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": false,
+          "footPrint": false,
+          "bodyTemperature": false,
+          "vaccineRecord": false
+        },
+        "writeOffHC": {
+          "fa100Upload": false,
+          "fa100Query": false,
+          "fa110Query": false,
+          "fa200Query": false,
+          "fa300Query": false
+        },
+        "daycaseService": {
+          "serviceRecord": true,
+          "vitalSigns": true
+        },
+        "daycaseShiftList": {
+          "index": true
+        },
+        "driverManager": {
+          "driverShiftTotal": true,
+          "driverShift": true,
+          "pickupOrder": true
+        },
+        "activityManager": {
+          "activityCalendar": true,
+          "activityRecord": true,
+          "activityPlan": true,
+          "groupManagement": true
+        },
+        "daycaseEvaluate": {
+          "preCaseList": true,
+          "preCaseProfile": true,
+          "consultForm": true,
+          "adaptEvaluationForm": true,
+          "referral": true
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": true,
+          "footPrint": true,
+          "bodyTemperature": true,
+          "vaccineRecord": true
+        },
+        "writeOffDC": {
+          "fa100Upload": true,
+          "fa100Query": true,
+          "fa110Query": true,
+          "fa200Query": true,
+          "fa300Query": true
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": true,
+          "tourVisitorList": true,
+          "caseVisitorCalendar": true,
+          "caseVisitorList": true,
+          "tourVisitorReservation": true,
+          "bedBooking": true,
+          "depositManagement": true
+        },
+        "package": {
+          "packageManagement": true
+        },
+        "bedCalendar": {
+          "index": true
+        },
+        "rcShift": {
+          "shiftCalendar": true,
+          "shiftManagement": true,
+          "shiftHandover": true
+        },
+        "nursingCare": {
+          "nursingActivity": true,
+          "medicalAffairs": true,
+          "nursingRoundsRecord": true
+        },
+        "dispatchCompanyList": {
+          "index": false
+        },
+        "caretakerList": {
+          "index": false
+        },
+        "fitnessDashboard": {
+          "index": false
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": true,
+          "profile": true,
+          "carePlan": true,
+          "regularEvaluationForm": true,
+          "pauseClose": true,
+          "hcCaseServiceRecord": false,
+          "hcCaseShift": false,
+          "hcAssessmentForm": false,
+          "hcWorkingRecord": false,
+          "hcPersonalizedServiceTime": false,
+          "familyContactForm": true,
+          "dcCaseShift": true,
+          "dcCaseServiceRecord": true,
+          "dcActivity": true,
+          "dcAssessmentForm": true,
+          "vitalSigns": true,
+          "eatingRecord": true,
+          "medicalRecommendation": true,
+          "tocc": true,
+          "familyEcologyMap": true,
+          "abnormalEvent": true,
+          "customerComplaint": true,
+          "expertCarePlan": true,
+          "dispatch": false,
+          "records": true,
+          "contractSetting": true,
+          "checkInOut": true,
+          "log": true
+        },
+        "contractManagement": {
+          "depositManagement": true,
+          "caseContract": true,
+          "companyContractsSetting": true
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": true,
+          "medicineUsageRecord": true,
+          "medicineManagement": true,
+          "medicineUsageSetting": true
+        },
+        "event": {
+          "abnormalEvent": true,
+          "customerComplaint": true
+        },
+        "calendar": {
+          "companyCalendar": true
+        },
+        "formRemind": {
+          "index": true
+        },
+        "companyCustomSetting": {
+          "profile": true,
+          "advanced": true,
+          "employeeRoleAndRight": true,
+          "formRight": true,
+          "systemConnect": false,
+          "cCodeSample": false,
+          "customerSatisfactionQRCode": false,
+          "accountClosure": true,
+          "serviceDefaultTime": true,
+          "holidayCalendar": true
+        },
+        "employee": {
+          "list": true,
+          "profile": true,
+          "hcEmployeeShift": false,
+          "dayoffRecord": false,
+          "customerSatisfaction": false,
+          "certification": false,
+          "hcEmployeeAssessmentForm": false,
+          "salarySettings": false,
+          "vitalSigns": false,
+          "tocc": false,
+          "footPrint": false,
+          "log": false
+        },
+        "dayCareEmployeeShiftList": {
+          "index": true
+        },
+        "groupManagement": {
+          "index": false
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": true,
+          "aCodeList": true
+        },
+        "salaryManagement": {
+          "general": true,
+          "monthlySalary": true,
+          "hourlySalary": true,
+          "splitBill": true,
+          "splitBillAboriginal": true,
+          "bathCarSplitBillRatio": true
+        },
+        "mealManagement": {
+          "weeklyMenu": true,
+          "dishManagement": true,
+          "dishCategory": true,
+          "ingredientsStore": true,
+          "ingredientsInOut": true,
+          "ingredientsCategory": true,
+          "mealPreference": true,
+          "mealStatistics": true,
+          "mealRecord": true,
+          "cleanRecord": true
+        },
+        "assetDevice": {
+          "assetManagement": true,
+          "deviceMaintenance": true
+        },
+        "locationManagement": {
+          "overview": true,
+          "basicInfo": true,
+          "assetDevice": true,
+          "IoTDevice": true
+        },
+        "productManagement": {
+          "list": true
+        },
+        "stockManagement": {
+          "commodityStock": true,
+          "warehouseStock": true,
+          "inAndOutWarehouse": true,
+          "inventory": true,
+          "warehouseManagement": true
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": true
+        },
+        "cleanManagement": {
+          "checkForm": true
+        },
+        "companyCarManagement": {
+          "list": true
+        },
+        "report": {
+          "hc": false,
+          "dc": true,
+          "acm": false
+        },
+        "eform": {
+          "index": false
+        },
+        "companyForm": {
+          "formTotal": false,
+          "assessmentForm": false
+        },
+        "customSetting": {
+          "customizedList": false,
+          "defaultHolidayCalendar": false,
+          "caseReceiptSetting": false
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": false,
+          "serviceDefaultRole": false,
+          "companyServiceSetting": false,
+          "companyFormRight": false
+        },
+        "log": {
+          "index": false
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    },
+    {
+      "code": "HC+DC+RC",
+      "name": "居家式+社區式+住宿式",
+      "pageAuth": {
+        "homeServiceDashboard": {
+          "index": true
+        },
+        "hcShiftList": {
+          "index": true
+        },
+        "locationManager": {
+          "index": true
+        },
+        "supervisorVisitRecord": {
+          "index": true
+        },
+        "epidemicPreventionRecord" : {
+          "tocc": true,
+          "footPrint": true,
+          "bodyTemperature": true,
+          "vaccineRecord": true
+        },
+        "writeOffHC": {
+          "fa100Upload": true,
+          "fa100Query": true,
+          "fa110Query": true,
+          "fa200Query": true,
+          "fa300Query": true
+        },
+        "daycaseService": {
+          "serviceRecord": true,
+          "vitalSigns": true
+        },
+        "daycaseShiftList": {
+          "index": true
+        },
+        "driverManager": {
+          "driverShiftTotal": true,
+          "driverShift": true,
+          "pickupOrder": true
+        },
+        "activityManager": {
+          "activityCalendar": true,
+          "activityRecord": true,
+          "activityPlan": true,
+          "groupManagement": true
+        },
+        "daycaseEvaluate": {
+          "preCaseList": true,
+          "preCaseProfile": true,
+          "consultForm": true,
+          "adaptEvaluationForm": true,
+          "referral": true
+        },
+        "epidemicPreventionRecordDaycare": {
+          "tocc": true,
+          "footPrint": true,
+          "bodyTemperature": true,
+          "vaccineRecord": true
+        },
+        "writeOffDC": {
+          "fa100Upload": true,
+          "fa100Query": true,
+          "fa110Query": true,
+          "fa200Query": true,
+          "fa300Query": true
+        },
+        "receptionCheckIn": {
+          "receptionCalendar": true,
+          "tourVisitorList": true,
+          "caseVisitorCalendar": true,
+          "caseVisitorList": true,
+          "tourVisitorReservation": true,
+          "bedBooking": true,
+          "depositManagement": true
+        },
+        "package": {
+          "packageManagement": true
+        },
+        "bedCalendar": {
+          "index": true
+        },
+        "rcShift": {
+          "shiftCalendar": true,
+          "shiftManagement": true,
+          "shiftHandover": true
+        },
+        "nursingCare": {
+          "nursingActivity": true,
+          "medicalAffairs": true,
+          "nursingRoundsRecord": true
+        },
+        "dispatchCompanyList": {
+          "index": false
+        },
+        "caretakerList": {
+          "index": false
+        },
+        "fitnessDashboard": {
+          "index": false
+        },
+        "corporateSummary": {
+          "index": true
+        },
+        "employeeSummary": {
+          "index": true
+        },
+        "caseSummary": {
+          "index": true
+        },
+        "operationalTrend": {
+          "index": true
+        },
+        "operationalAnalysis": {
+          "index": true
+        },
+        "case": {
+          "list": true,
+          "profile": true,
+          "carePlan": true,
+          "regularEvaluationForm": true,
+          "pauseClose": true,
+          "hcCaseServiceRecord": true,
+          "hcCaseShift": true,
+          "hcAssessmentForm": true,
+          "hcWorkingRecord": true,
+          "hcPersonalizedServiceTime": true,
+          "familyContactForm": true,
+          "dcCaseShift": true,
+          "dcCaseServiceRecord": true,
+          "dcActivity": true,
+          "dcAssessmentForm": true,
+          "vitalSigns": true,
+          "eatingRecord": true,
+          "medicalRecommendation": true,
+          "tocc": true,
+          "familyEcologyMap": true,
+          "abnormalEvent": true,
+          "customerComplaint": true,
+          "expertCarePlan": true,
+          "dispatch": false,
+          "records": true,
+          "contractSetting": true,
+          "checkInOut": true,
+          "log": true
+        },
+        "contractManagement": {
+          "depositManagement": true,
+          "caseContract": true,
+          "companyContractsSetting": true
+        },
+        "medicineUsageManagement": {
+          "medicineUsagePlan": true,
+          "medicineUsageRecord": true,
+          "medicineManagement": true,
+          "medicineUsageSetting": true
+        },
+        "event": {
+          "abnormalEvent": true,
+          "customerComplaint": true
+        },
+        "calendar": {
+          "companyCalendar": true
+        },
+        "formRemind": {
+          "index": true
+        },
+        "companyCustomSetting": {
+          "profile": true,
+          "advanced": true,
+          "employeeRoleAndRight": true,
+          "formRight": true,
+          "systemConnect": false,
+          "cCodeSample": true,
+          "customerSatisfactionQRCode": true,
+          "accountClosure": true,
+          "serviceDefaultTime": true,
+          "holidayCalendar": true
+        },
+        "employee": {
+          "list": true,
+          "profile": true,
+          "hcEmployeeShift": true,
+          "dayoffRecord": true,
+          "customerSatisfaction": true,
+          "certification": true,
+          "hcEmployeeAssessmentForm": true,
+          "salarySettings": true,
+          "vitalSigns": true,
+          "tocc": true,
+          "footPrint": true,
+          "log": true
+        },
+        "dayCareEmployeeShiftList": {
+          "index": true
+        },
+        "groupManagement": {
+          "index": false
+        },
+        "interviewManagement": {
+          "index": true
+        },
+        "messageManagement": {
+          "myMessage": true,
+          "takeoffMessage": true,
+          "myAnnouncement": true,
+          "systemMessageManagement": true
+        },
+        "chargeServiceManagement": {
+          "ownExpenseItemList": true,
+          "aCodeList": true
+        },
+        "salaryManagement": {
+          "general": true,
+          "monthlySalary": true,
+          "hourlySalary": true,
+          "splitBill": true,
+          "splitBillAboriginal": true,
+          "bathCarSplitBillRatio": true
+        },
+        "mealManagement": {
+          "weeklyMenu": true,
+          "dishManagement": true,
+          "dishCategory": true,
+          "ingredientsStore": true,
+          "ingredientsInOut": true,
+          "ingredientsCategory": true,
+          "mealPreference": true,
+          "mealStatistics": true,
+          "mealRecord": true,
+          "cleanRecord": true
+        },
+        "assetDevice": {
+          "assetManagement": true,
+          "deviceMaintenance": true
+        },
+        "locationManagement": {
+          "overview": true,
+          "basicInfo": true,
+          "assetDevice": true,
+          "IoTDevice": true
+        },
+        "productManagement": {
+          "list": true
+        },
+        "stockManagement": {
+          "commodityStock": true,
+          "warehouseStock": true,
+          "inAndOutWarehouse": true,
+          "inventory": true,
+          "warehouseManagement": true
+        },
+        "standingMedicineManagement": {
+          "medicineStock": true,
+          "medicineInAndOutStock": true
+        },
+        "postManagement": {
+          "list": true
+        },
+        "cleanManagement": {
+          "checkForm": true
+        },
+        "companyCarManagement": {
+          "list": true
+        },
+        "report": {
+          "hc": true,
+          "dc": true,
+          "acm": false
+        },
+        "eform": {
+          "index": false
+        },
+        "companyForm": {
+          "formTotal": true,
+          "assessmentForm": true
+        },
+        "customSetting": {
+          "customizedList": false,
+          "defaultHolidayCalendar": false,
+          "caseReceiptSetting": false
+        },
+        "openSiteSetting": {
+          "serviceDefaultFunction": false,
+          "serviceDefaultRole": false,
+          "companyServiceSetting": false,
+          "companyFormRight": false
+        },
+        "log": {
+          "index": false
+        },
+        "formFlow": {
+          "caseFormFlow": false,
+          "expiredFormRemind": false
+        }
+      },
+      "reportAuth": {
+      },
+      "valid": true,
+      "__sc": "ERPV3",
+      "__vn": 1,
+      "__cc": ""
+    }
+  ]
+}

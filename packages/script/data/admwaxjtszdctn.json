@@ -1,0 +1,16 @@
+{
+  "shortName": "台南小腳腿失智(日照)",
+  "companyId": "6239e5057cbf9f730da0337d",
+  "forms": {
+    "evaluation-tpomai": {
+      "link": "./forms/evaluation-tpomai.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 1,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

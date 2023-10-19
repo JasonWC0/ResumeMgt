@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "erpv3-dqa-web",
+      "script": "./packages/backend/bin/www.js",
+      "exec_mode": "fork",
+      "args": [
+        "--env",
+        "dqa",
+        "--port",
+        "9001"
+      ]
+    }
+  ]
+}

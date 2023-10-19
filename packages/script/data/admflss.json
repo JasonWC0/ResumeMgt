@@ -1,0 +1,46 @@
+{
+  "shortName": "富立水日照桃園",
+  "companyId": "6272959c1d95f9348868ac45",
+  "forms": {
+    "accreditation-ci": {
+      "link": "./forms/accreditation-ci.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-cpcp": {
+      "link": "./forms/accreditation-cpcp.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.01",
+        "__vn": 0,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-ccper": {
+      "link": "./forms/accreditation-ccper.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-thr": {
+      "link": "./forms/accreditation-thr.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "shortName": "​鳳林亞望沙龍日照中心",
+  "companyId": "6356aabfb858c927b73d8932",
+  "forms": {
+    "accreditation-ci": {
+      "link": "./forms/accreditation-ci.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-cpcp": {
+      "link": "./forms/accreditation-cpcp.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-ccper": {
+      "link": "./forms/accreditation-ccper.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-thr": {
+      "link": "./forms/accreditation-thr.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

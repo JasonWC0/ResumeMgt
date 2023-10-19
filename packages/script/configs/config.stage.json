@@ -1,0 +1,12 @@
+{
+  "SERVICE": {
+    "NAME": "ERPv3",
+    "PREFIX": "/main",
+    "HOST": "https://apistaging.compal-health.com",
+    "CORS": ["https://www.compal-health.com", "https://erpstaging.compal-health.com", "http://localhost:3000", "http://localhost:3300"]
+  },
+  "ADMIN_AUTH": {
+    "KEY": "adminAuthKey",
+    "VALUE": "adminAuthValue"
+  }
+}

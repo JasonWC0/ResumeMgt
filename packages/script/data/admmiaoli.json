@@ -1,0 +1,16 @@
+{
+  "shortName": "台中喜瑞村(日照)",
+  "companyId": "617abb2d7e38fb21888631ee",
+  "forms": {
+    "evaluation-nsi": {
+      "link": "./forms/evaluation-nsi.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

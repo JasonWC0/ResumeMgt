@@ -1,0 +1,46 @@
+{
+  "shortName": "高雄永安樂齡(日照)",
+  "companyId": "603e5432de58f413382f58a7",
+  "forms": {
+    "accreditation-ci": {
+      "link": "./forms/accreditation-ci.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-cpcp": {
+      "link": "./forms/accreditation-cpcp.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-ccper": {
+      "link": "./forms/accreditation-ccper.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-thr": {
+      "link": "./forms/accreditation-thr.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

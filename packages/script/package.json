@@ -1,0 +1,29 @@
+{
+  "name": "@erpv3/script",
+  "version": "0.0.1",
+  "private": true,
+  "description": "data script",
+  "author": "JoyceSHsu <97714511+JoyceSHsu@users.noreply.github.com>",
+  "homepage": "https://github.com/compal-swhq/erpv3_web_backend#readme",
+  "license": "ISC",
+  "main": "script.js",
+  "directories": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compal-swhq/erpv3_web_backend.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/compal-swhq/erpv3_web_backend/issues"
+  },
+  "dependencies": {
+    "@erpv3/app-common": "^0.0.1",
+    "lodash": "4.17.20",
+    "node-fetch": "2.6.1"
+  }
+}

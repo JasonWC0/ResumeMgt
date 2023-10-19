@@ -1,0 +1,46 @@
+{
+  "shortName": "泰祥高雄",
+  "companyId": "64190f02ee300f6579bca13b",
+  "forms": {
+    "accreditation-ci": {
+      "link": "./forms/accreditation-ci.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-cpcp": {
+      "link": "./forms/accreditation-cpcp.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-ccper": {
+      "link": "./forms/accreditation-ccper.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-thr": {
+      "link": "./forms/accreditation-thr.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 2,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

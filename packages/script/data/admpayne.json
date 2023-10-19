@@ -1,0 +1,24 @@
+{
+  "shortName": "花蓮沛恩居服",
+  "companyId": "5e9dba1da4e50f656252fa3b",
+  "forms": {
+    "evaluation-pi": {
+      "link": "./forms/evaluation-pi.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 0,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "evaluation-hi": {
+      "link": "./forms/evaluation-hi.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 0,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

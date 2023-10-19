@@ -1,0 +1,24 @@
+{
+  "shortName": "仁寶長照機構",
+  "companyId": "58aff69b0f65c363f3619437",
+  "forms": {
+    "evaluation-pi": {
+      "link": "./forms/evaluation-pi.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 0,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "evaluation-hi": {
+      "link": "./forms/evaluation-hi.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 0,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

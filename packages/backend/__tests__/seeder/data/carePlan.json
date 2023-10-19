@@ -1,0 +1,396 @@
+{
+    "data": [
+        {
+            "_id" : "62abe46a93f65730b8f06ee4",
+            "AA05EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA06EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA07EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA08Declared" : {
+                "B" : false,
+                "C" : false
+            },
+            "AA09Declared" : {
+                "B" : false,
+                "C" : false,
+                "G" : false
+            },
+            "valid" : true,
+            "__vn" : 0,
+            "newDisabilityCategories" : [ 
+                0
+            ],
+            "disabilityCategories" : [ 
+                0
+            ],
+            "isIntellectualDisability" : false,
+            "isAA11a" : false,
+            "isAA11b" : true,
+            "isAA11aRemind" : true,
+            "foreignCareSPAllowance" : false,
+            "planEndDate" : null,
+            "declaredServiceCategory" : [],
+            "serviceCategoryOfACM" : [],
+            "hasDiseaseHistory" : false,
+            "diseaseHistoryList" : [],
+            "useBA12" : false,
+            "OPTDecisionRefIds" : [],
+            "isOPTDecisionRefCase" : false,
+            "caseId" : "000000626eb2351d2e140001",
+            "version" : "0",
+            "isHtml" : false,
+            "planType" : 0,
+            "consultingDate" : null,
+            "acceptConsultingDate" : null,
+            "visitingDate" : null,
+            "firstServiceDate" : null,
+            "reliefType" : null,
+            "cmsLevel" : 0,
+            "disabilityCategoryType" : null,
+            "oldDisabilityCategories" : "aabb",
+            "oldDisabilityCategoriesList" : [1],
+            "disabilityCertification" : true,
+            "disability" : null,
+            "disabilityItem" : 1,
+            "pricingType" : null,
+            "planStartDate" : "2022-06-17T02:18:18.782Z",
+            "introduction" : "",
+            "subjectChangeSummary" : "",
+            "changeReason" : "",
+            "disease" : "",
+            "diseaseHistoryStr" : "",
+            "behaviorAndEmotion" : "",
+            "note" : "",
+            "bcPayment" : {
+                "quota" : null,
+                "subsidy" : null,
+                "copayment" : null,
+                "excessOwnExpense" : null
+            },
+            "gPayment" : {
+                "quota" : null,
+                "subsidy" : null,
+                "copayment" : null
+            },
+            "serviceItems" : [],
+            "otherServiceItems" : [],
+            "introductionOfAOrg" : "",
+            "executionOfAOrg" : "",
+            "noteOfAOrg" : "",
+            "serviceItemOfAOrg" : [],
+            "caseManagerInfo" : {
+                "name" : "",
+                "phone" : "",
+                "email" : "",
+                "org" : ""
+            },
+            "signOffSupervisor" : [],
+            "__cc" : "",
+            "__sc" : "",
+            "createdAt" : "2022-06-17T02:18:18.792Z",
+            "updatedAt" : "2022-06-17T02:18:18.792Z"
+        },
+        {
+            "_id" : "000000626eb2351d2e150001",
+            "AA05EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA06EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA07EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA08Declared" : {
+                "B" : false,
+                "C" : false
+            },
+            "AA09Declared" : {
+                "B" : false,
+                "C" : false,
+                "G" : false
+            },
+            "valid" : true,
+            "__vn" : 0,
+            "newDisabilityCategories" : [ 
+                0
+            ],
+            "disabilityCategories" : [ 
+                0
+            ],
+            "isIntellectualDisability" : false,
+            "isAA11a" : false,
+            "isAA11b" : true,
+            "isAA11aRemind" : true,
+            "foreignCareSPAllowance" : false,
+            "declaredServiceCategory" : [],
+            "serviceCategoryOfACM" : [],
+            "hasDiseaseHistory" : false,
+            "diseaseHistoryList" : [],
+            "useBA12" : false,
+            "OPTDecisionRefIds" : [],
+            "isOPTDecisionRefCase" : false,
+            "caseId" : "000000626eb2351d2e140001",
+            "version" : "0",
+            "isHtml" : false,
+            "planType" : 0,
+            "consultingDate" : null,
+            "acceptConsultingDate" : null,
+            "visitingDate" : null,
+            "firstServiceDate" : null,
+            "reliefType" : null,
+            "cmsLevel" : 0,
+            "disabilityCategoryType" : null,
+            "oldDisabilityCategories" : "aabb",
+            "oldDisabilityCategoriesList" : [1],
+            "disabilityCertification" : true,
+            "disability" : null,
+            "disabilityItem" : 1,
+            "pricingType" : null,
+            "planStartDate" : "2022-06-17T02:18:18.782Z",
+            "planEndDate" : "2022-06-20T02:18:18.782Z",
+            "introduction" : "",
+            "subjectChangeSummary" : "",
+            "changeReason" : "",
+            "disease" : "",
+            "diseaseHistoryStr" : "",
+            "behaviorAndEmotion" : "",
+            "note" : "",
+            "bcPayment" : {
+                "quota" : null,
+                "subsidy" : null,
+                "copayment" : null,
+                "excessOwnExpense" : null
+            },
+            "gPayment" : {
+                "quota" : null,
+                "subsidy" : null,
+                "copayment" : null
+            },
+            "serviceItems" : [],
+            "otherServiceItems" : [],
+            "introductionOfAOrg" : "",
+            "executionOfAOrg" : "",
+            "noteOfAOrg" : "",
+            "serviceItemOfAOrg" : [],
+            "caseManagerInfo" : {
+                "name" : "",
+                "phone" : "",
+                "email" : "",
+                "org" : ""
+            },
+            "signOffSupervisor" : [],
+            "__cc" : "",
+            "__sc" : "",
+            "createdAt" : "2022-06-17T02:18:18.792Z",
+            "updatedAt" : "2022-06-17T02:18:18.792Z"
+        },
+        {
+            "_id" : "000000626eb2351d2e150002",
+            "AA05EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA06EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA07EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA08Declared" : {
+                "B" : false,
+                "C" : false
+            },
+            "AA09Declared" : {
+                "B" : false,
+                "C" : false,
+                "G" : false
+            },
+            "valid" : true,
+            "__vn" : 0,
+            "newDisabilityCategories" : [ 
+                0
+            ],
+            "disabilityCategories" : [ 
+                0
+            ],
+            "isIntellectualDisability" : false,
+            "isAA11a" : false,
+            "isAA11b" : true,
+            "isAA11aRemind" : true,
+            "foreignCareSPAllowance" : false,
+            "planEndDate" : null,
+            "declaredServiceCategory" : [],
+            "serviceCategoryOfACM" : [],
+            "hasDiseaseHistory" : false,
+            "diseaseHistoryList" : [],
+            "useBA12" : false,
+            "OPTDecisionRefIds" : [],
+            "isOPTDecisionRefCase" : false,
+            "caseId" : "000000626eb2351d2e140002",
+            "version" : "0",
+            "isHtml" : false,
+            "planType" : 0,
+            "consultingDate" : null,
+            "acceptConsultingDate" : null,
+            "visitingDate" : null,
+            "firstServiceDate" : null,
+            "reliefType" : null,
+            "cmsLevel" : 0,
+            "disabilityCategoryType" : null,
+            "oldDisabilityCategories" : "aabb",
+            "oldDisabilityCategoriesList" : [1],
+            "disabilityCertification" : true,
+            "disability" : null,
+            "disabilityItem" : 1,
+            "pricingType" : null,
+            "planStartDate" : "2022-06-17T02:18:18.782Z",
+            "introduction" : "",
+            "subjectChangeSummary" : "",
+            "changeReason" : "",
+            "disease" : "",
+            "diseaseHistoryStr" : "",
+            "behaviorAndEmotion" : "",
+            "note" : "",
+            "bcPayment" : {
+                "quota" : null,
+                "subsidy" : null,
+                "copayment" : null,
+                "excessOwnExpense" : null
+            },
+            "gPayment" : {
+                "quota" : null,
+                "subsidy" : null,
+                "copayment" : null
+            },
+            "serviceItems" : [],
+            "otherServiceItems" : [],
+            "introductionOfAOrg" : "",
+            "executionOfAOrg" : "",
+            "noteOfAOrg" : "",
+            "serviceItemOfAOrg" : [],
+            "caseManagerInfo" : {
+                "name" : "",
+                "phone" : "",
+                "email" : "",
+                "org" : ""
+            },
+            "signOffSupervisor" : [],
+            "__cc" : "",
+            "__sc" : "",
+            "createdAt" : "2022-06-17T02:18:18.792Z",
+            "updatedAt" : "2022-06-17T02:18:18.792Z"
+        },
+        {
+            "_id" : "000000626eb2351d2e150000",
+            "AA05EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA06EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA07EntitledDeclared" : {
+                "isWriteOffAfter10712" : false,
+                "isWriteOffBetween10709And10711" : false
+            },
+            "AA08Declared" : {
+                "B" : false,
+                "C" : false
+            },
+            "AA09Declared" : {
+                "B" : false,
+                "C" : false,
+                "G" : false
+            },
+            "valid" : true,
+            "__vn" : 0,
+            "newDisabilityCategories" : [ 
+                0
+            ],
+            "disabilityCategories" : [ 
+                0
+            ],
+            "isIntellectualDisability" : false,
+            "isAA11a" : false,
+            "isAA11b" : true,
+            "isAA11aRemind" : true,
+            "foreignCareSPAllowance" : false,
+            "planEndDate" : null,
+            "declaredServiceCategory" : [],
+            "serviceCategoryOfACM" : [],
+            "hasDiseaseHistory" : false,
+            "diseaseHistoryList" : [],
+            "useBA12" : false,
+            "OPTDecisionRefIds" : [],
+            "isOPTDecisionRefCase" : false,
+            "caseId" : "000000626eb2351d2e140000",
+            "version" : "0",
+            "isHtml" : false,
+            "planType" : 0,
+            "consultingDate" : null,
+            "acceptConsultingDate" : null,
+            "visitingDate" : null,
+            "firstServiceDate" : null,
+            "reliefType" : null,
+            "cmsLevel" : 0,
+            "disabilityCategoryType" : null,
+            "oldDisabilityCategories" : "aabb",
+            "oldDisabilityCategoriesList" : [1],
+            "disabilityCertification" : true,
+            "disability" : null,
+            "disabilityItem" : 1,
+            "pricingType" : null,
+            "planStartDate" : "2022-06-17T02:18:18.782Z",
+            "introduction" : "",
+            "subjectChangeSummary" : "",
+            "changeReason" : "",
+            "disease" : "",
+            "diseaseHistoryStr" : "",
+            "behaviorAndEmotion" : "",
+            "note" : "",
+            "bcPayment" : {
+                "quota" : null,
+                "subsidy" : null,
+                "copayment" : null,
+                "excessOwnExpense" : null
+            },
+            "gPayment" : {
+                "quota" : null,
+                "subsidy" : null,
+                "copayment" : null
+            },
+            "serviceItems" : [],
+            "otherServiceItems" : [],
+            "introductionOfAOrg" : "",
+            "executionOfAOrg" : "",
+            "noteOfAOrg" : "",
+            "serviceItemOfAOrg" : [],
+            "caseManagerInfo" : {
+                "name" : "",
+                "phone" : "",
+                "email" : "",
+                "org" : ""
+            },
+            "signOffSupervisor" : [],
+            "__cc" : "",
+            "__sc" : "",
+            "createdAt" : "2022-06-17T02:18:18.792Z",
+            "updatedAt" : "2022-06-17T02:18:18.792Z"
+        }
+    ]
+}

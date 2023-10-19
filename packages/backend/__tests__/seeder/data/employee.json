@@ -1,0 +1,402 @@
+{
+  "data": [
+    {
+      "employeeNum": "0000000",
+      "startDate": "2022/02/29",
+      "endDate": "2022/02/29",
+      "status": 1,
+      "comPersonMgmt": [
+        {
+          "companyId": "6209f7102dde25cae862482d",
+          "supervisorId": "6209f74ea145923ab57773b9",
+          "supervisor2Id": "6209f74ea145923ab57773b9",
+          "roles": [
+            0
+          ]
+        }
+      ],
+      "contacts": [
+        {
+          "personId": "6209f71974ac715080d36310",
+          "relationship": "",
+          "note": ""
+        }
+      ],
+      "serviceRegion": ["台北市中山區", "台北市內湖區"],
+      "interviewNote": "良好",
+      "supervisorId": "6209f71974ac715080d36311",
+      "supervisor2Id": "6209f71974ac715080d36312",
+      "serviceItemQualification": [0],
+      "employeeCategory": "打工"
+    }
+  ],
+  "person": [
+    {
+      "_id": "6209f74ea145923ab57773b9",
+      "corpId": "6209f71974ac715080d36309",
+      "name": "金貝貝",
+      "nickname": "小金",
+      "personalId": "A0123456789",
+      "email": "compalTest@compaltest.com",
+      "mobile": "0123456789",
+      "phoneH": "3345678",
+      "phoneO": "3345678",
+      "extNumber": "999999",
+      "lineId": "1234567890",
+      "facebook": "abcabc",
+      "gender": 0,
+      "birthDate": "2022/02/28",
+      "nationality": 0,
+      "languages": [
+        0,
+        1
+      ],
+      "aborigines": 0,
+      "aboriginalRace": 0,
+      "education": 0,
+      "disability": 0,
+      "registerPlace": {
+        "postalCode": "11492",
+        "city": "台北市",
+        "region": "內湖區",
+        "village": "",
+        "neighborhood": "",
+        "road": "瑞光路",
+        "others": "585號"
+      },
+      "residencePlace": {
+        "postalCode": "11492",
+        "city": "台北市",
+        "region": "內湖區",
+        "village": "",
+        "neighborhood": "",
+        "road": "瑞光路",
+        "others": "585號"
+      },
+      "employee": {
+        "startDate": "2022/02/29",
+        "endDate": "2022/02/29",
+        "comPersonMgmt": [
+          {
+            "employeeNum": "0000000",
+            "companyId": "6209f7102dde25cae862482e",
+            "supervisorId": "6209f71974ac715080d36308",
+            "supervisor2Id": "6209f71974ac715080d36307",
+            "roles": [
+              0
+            ],
+            "employmentType": 1,
+            "category": "c",
+            "centralGovSystemAccount": "qwer1234",
+            "weekHours": 40,
+            "reportingAgent": {
+              "isAgent": true,
+              "agentType": 0,
+              "employeeAgent": ""
+            },
+            "serviceRegion": [],
+            "interviewNote": "",
+            "salarySystem": 0,
+            "employeeCategory": "居服",
+            "startDate": "2022/02/28",
+            "endDate": "2022/03/20"
+          },
+          {
+            "employeeNum": "AA88888",
+            "companyId": "6209f7102dde25cae862482f",
+            "supervisorId": "6209f71974ac715080d36400",
+            "supervisor2Id": "6209f71974ac715080d36500",
+            "roles": [
+              0
+            ],
+            "employmentType": 1,
+            "category": "c",
+            "centralGovSystemAccount": "qwer12345",
+            "weekHours": 40,
+            "reportingAgent": {
+              "isAgent": true,
+              "agentType": 0,
+              "employeeAgent": ""
+            },
+            "serviceRegion": [],
+            "interviewNote": "",
+            "employeeCategory": "居服",
+            "startDate": "2022/02/28",
+            "endDate": null
+          }
+        ],
+        "contact": {
+          "name": "金富力士",
+          "mobile": "3345678",
+          "phoneH": "3345678",
+          "relationship": "父子"
+        },
+        "serviceItemQualification": []
+      },
+      "customer": {
+        "cusRoles": [
+          {
+            "companyId": "6209f71974ac715080d36311",
+            "roles": [
+              0
+            ]
+          }
+        ],
+        "contacts": [
+          {
+            "personId": "6209f71974ac715080d36312",
+            "relationship": "",
+            "note": ""
+          }
+        ],
+        "agent": {
+          "personId": "6209f71974ac715080d36313",
+          "relationship": "",
+          "note": ""
+        },
+        "caregivers": {
+          "primary": {
+            "personId": "6209f71974ac715080d36500",
+            "relationship": "父子",
+            "note": "無"
+          },
+          "secondary": null
+        }
+      },
+      "otherLanguage": "",
+      "note": "備註",
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "_id": "6209f7563ccd5a73d08e1b57",
+      "corpId": "6209f71974ac715080d36309",
+      "name": "小丹尼",
+      "nickname": "小丹",
+      "personalId": "compalTest2",
+      "email": "compalTest@compaltest.com",
+      "mobile": "0123456789",
+      "phoneH": "3345678",
+      "phoneO": "3345678",
+      "extNumber": "999999",
+      "lineId": "1234567890",
+      "facebook": "abcabc",
+      "gender": 0,
+      "birthDate": "2022/02/28",
+      "nationality": 0,
+      "languages": [
+        0,
+        1
+      ],
+      "aborigines": 0,
+      "aboriginalRace": 0,
+      "education": 0,
+      "disability": 0,
+      "registerPlace": {
+        "postalCode": "11492",
+        "city": "台北市",
+        "region": "內湖區",
+        "village": "",
+        "neighborhood": "",
+        "road": "瑞光路",
+        "others": "585號"
+      },
+      "residencePlace": {
+        "postalCode": "11492",
+        "city": "台北市",
+        "region": "內湖區",
+        "village": "",
+        "neighborhood": "",
+        "road": "瑞光路",
+        "others": "585號"
+      },
+      "employee": {
+        "status": 1,
+        "comPersonMgmt": [
+          {
+            "employeeNum": "0000000",
+            "companyId": "6209f7102dde25cae862482d",
+            "supervisorId": "6209f71974ac715080d36500",
+            "supervisor2Id": "6209f71974ac715080d36700",
+            "roles": [
+              0, 11
+            ],
+            "employmentType": 1,
+            "category": "c",
+            "centralGovSystemAccount": "qwer1234",
+            "weekHours": 40,
+            "reportingAgent": {
+              "isAgent": true,
+              "agentType": "A",
+              "employeeAgent": ""
+            },
+            "serviceRegion": [],
+            "interviewNote": "",
+            "employeeCategory": "居服",
+            "startDate": "2022/02/29",
+            "endDate": "2022/10/30"
+          }
+        ],
+        "contact": {
+          "name": "富蘭克林",
+          "mobile": "3345678",
+          "phoneH": "3345678",
+          "relationship": "父子"
+        },
+        "serviceItemQualification": []
+      },
+      "customer": {
+        "cusRoles": [
+          {
+            "companyId": "6209f71974ac715080d36311",
+            "roles": [
+              0
+            ]
+          }
+        ],
+        "contacts": [
+          {
+            "personId": "6209f71974ac715080d36312",
+            "relationship": "",
+            "note": ""
+          }
+        ],
+        "agent": {
+          "personId": "6209f71974ac715080d36313",
+          "relationship": "",
+          "note": ""
+        },
+        "caregivers": {
+          "primary": {
+            "personId": "6209f71974ac715080d36500",
+            "relationship": "父子",
+            "note": "無"
+          },
+          "secondary": null
+        }
+      },
+      "otherLanguage": "",
+      "note": "",
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    },
+    {
+      "_id": "6209f75d85d4b28320f1f81e",
+      "corpId": "6209f71974ac715080d36309",
+      "name": "烏咪",
+      "nickname": "小咪",
+      "personalId": "compalTest3",
+      "email": "compalTest2@compaltest.com",
+      "mobile": "0123456789",
+      "phoneH": "3345678",
+      "phoneO": "3345678",
+      "extNumber": "999999",
+      "lineId": "1234567890",
+      "facebook": "abcabc",
+      "gender": 0,
+      "birthDate": "2022/02/28",
+      "nationality": 0,
+      "languages": [
+        0,
+        1
+      ],
+      "aborigines": 0,
+      "aboriginalRace": 0,
+      "education": 0,
+      "disability": 0,
+      "registerPlace": {
+        "postalCode": "11492",
+        "city": "台北市",
+        "region": "內湖區",
+        "village": "",
+        "neighborhood": "",
+        "road": "瑞光路",
+        "others": "585號"
+      },
+      "residencePlace": {
+        "postalCode": "11492",
+        "city": "台北市",
+        "region": "內湖區",
+        "village": "",
+        "neighborhood": "",
+        "road": "瑞光路",
+        "others": "585號"
+      },
+      "employee": {
+        "account": "testaccount",
+        "status": 1,
+        "comPersonMgmt": [
+          {
+            "employeeNum": "0000000",
+            "companyId": "6209f7102dde25cae862482d",
+            "supervisorId": "6209f71974ac715080d36500",
+            "supervisor2Id": "6209f71974ac715080d36600",
+            "roles": [
+              0, 11
+            ],
+            "employmentType": 1,
+            "category": "c",
+            "centralGovSystemAccount": "qwer1234",
+            "weekHours": 40,
+            "reportingAgent": {
+              "isAgent": true,
+              "agentType": "A",
+              "employeeAgent": ""
+            },
+            "serviceRegion": [],
+            "interviewNote": "",
+            "employeeCategory": "打工",
+            "startDate": "2022/04/10"
+          }
+        ],
+        "contact": {
+          "name": "庫洛洛",
+          "mobile": "3345678",
+          "phoneH": "3345678",
+          "relationship": "父子"
+        },
+        "serviceItemQualification": []
+      },
+      "customer": {
+        "cusRoles": [
+          {
+            "companyId": "6209f71974ac715080d36311",
+            "roles": [
+              0
+            ]
+          }
+        ],
+        "contacts": [
+          {
+            "personId": "6209f71974ac715080d36312",
+            "relationship": "",
+            "note": ""
+          }
+        ],
+        "agent": {
+          "personId": "6209f71974ac715080d36313",
+          "relationship": "",
+          "note": ""
+        },
+        "caregivers": {
+          "primary": {
+            "personId": "6209f71974ac715080d36500",
+            "relationship": "父子",
+            "note": "無"
+          },
+          "secondary": null
+        }
+      },
+      "otherLanguage": "",
+      "note": "",
+      "valid": true,
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    }
+  ]
+}

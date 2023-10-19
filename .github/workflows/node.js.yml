@@ -1,0 +1,64 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+      - "**.md"
+      - "package.json"
+      - "packages/backend/configs/**"
+      - "packages/backend/script/**"
+      - ".github/**"
+  pull_request:
+    branches: [ master ]
+    paths-ignore:
+      - "**.md"
+      - "package.json"
+      - "packages/backend/configs/**"
+      - "packages/backend/script/**"
+      - ".github/**"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        mongodb-version: [5.0]
+    steps:
+    - uses: szenius/set-timezone@v1.0
+      with:
+        timezoneLinux: "Asia/Taipei"
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Start mongodb
+      uses: supercharge/mongodb-github-action@1.7.0
+      with:
+          mongodb-version: ${{ matrix.mongodb-version }}
+          mongodb-replica-set: erp-rs
+    - name: Modify npmrc parameter
+      run: |
+          sed -i 's/\${GITHUB_TOKEN}/'"${{secrets.JOYCE_GITHUB_TOKEN}}"'/g' .npmrc
+    - run: yarn install
+    - run: npm run lint
+    - run: npm run test:local packages/backend/__tests__/[admin,migration]*-*
+    - run: npm run test:local packages/backend/__tests__/v1-[a-b]*
+    - run: npm run test:local packages/backend/__tests__/v1-care*
+    - run: npm run test:local packages/backend/__tests__/v1-case*
+    - run: npm run test:local packages/backend/__tests__/v1-co*
+    - run: npm run test:local packages/backend/__tests__/v1-cu*
+    - run: npm run test:local packages/backend/__tests__/v1-[d-g]*
+    - run: npm run test:local packages/backend/__tests__/v1-[h-m]*
+    - run: npm run test:local packages/backend/__tests__/v1-[n]*
+    - run: npm run test:local packages/backend/__tests__/v1-[o-p]*
+    - run: npm run test:local packages/backend/__tests__/v1-[q-r]*
+    - run: npm run test:local packages/backend/__tests__/v1-[s-z]*

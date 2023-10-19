@@ -1,0 +1,52 @@
+{
+  "shortName": "台北元泰日照",
+  "companyId": "62164cb1437f0b6d8b8fc99c",
+  "forms": {
+    "accreditation-ci": {
+      "link": "./forms/accreditation-ci.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 0,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-cpcp": {
+      "link": "./forms/accreditation-cpcp.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 0,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-ccper": {
+      "link": "./forms/accreditation-ccper.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 0,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "accreditation-thr": {
+      "link": "./forms/accreditation-thr.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "__vn": 0,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    },
+    "event-abnormal": {
+      "link": "./forms/event-abnormal.json",
+      "data": {
+        "clientDomain": "LUNA",
+        "version" : "v1.00",
+        "__vn": 1,
+        "__cc": "",
+        "__sc": "Script"
+      }
+    }
+  }
+}

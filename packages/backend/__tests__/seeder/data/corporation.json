@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "_id": "6209f71974ac715080d36309",
+      "fullName": "仁寶電腦",
+      "shortName": "",
+      "code": "",
+      "__enc": {
+        "provider": "./packages/backend/configs/encryption.keys.json",
+        "keyId": "compal",
+        "method": "AES/CBC/PKCS7"
+      },
+      "__cc": "",
+      "__vn": 0,
+      "__sc": ""
+    }
+  ]
+}

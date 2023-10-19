@@ -1,0 +1,19 @@
+{
+  "version": 0,
+  "data": [
+    { "region": "TW", "type": 3, "date": "2022/01/01", "note": "元旦" },
+    { "region": "TW", "type": 3, "date": "2022/01/31", "note": "除夕" },
+    { "region": "TW", "type": 3, "date": "2022/02/01", "note": "春節(初一)" },
+    { "region": "TW", "type": 3, "date": "2022/02/02", "note": "春節(初二)" },
+    { "region": "TW", "type": 3, "date": "2022/02/03", "note": "春節(初三)" },
+    { "region": "TW", "type": 3, "date": "2022/02/04", "note": "春節(初四)" },
+    { "region": "TW", "type": 3, "date": "2022/02/05", "note": "春節(初五)" },
+    { "region": "TW", "type": 3, "date": "2022/02/28", "note": "和平紀念日" },
+    { "region": "TW", "type": 3, "date": "2022/04/04", "note": "兒童節" },
+    { "region": "TW", "type": 3, "date": "2022/04/05", "note": "清明節" },
+    { "region": "TW", "type": 3, "date": "2022/05/01", "note": "勞動節" },
+    { "region": "TW", "type": 3, "date": "2022/06/03", "note": "端午節" },
+    { "region": "TW", "type": 3, "date": "2022/09/10", "note": "中秋節" },
+    { "region": "TW", "type": 3, "date": "2022/10/10", "note": "國慶日" }
+  ]
+}

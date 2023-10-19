@@ -1,0 +1,105 @@
+{
+  "SERVICE": {
+    "NAME": "ERPv3",
+    "PREFIX": "/main",
+    "HOST": "http://localhost:9000",
+    "CORS": ["http://localhost:3000", "http://localhost:3300", "https://localhost:3300"]
+  },
+  "KEYCLOAK":{
+    "HOST": "https://ccrc_keycloak.compal-health.com",
+    "REALM": "ERPv3-Dev",
+    "CLIENT_ID": "erpv3-service",
+    "CLIENT_SECRET": "de9a9745-fbc4-4bef-aada-0ae302cc96c6",
+    "KC_CLIENTID": "a529aeca-2057-4241-be2e-7848f228f963",
+    "USER": {
+      "GRANT_TYPE": "password"
+    },
+    "ADMIN": {
+      "GRANT_TYPE": "client_credentials"
+    }
+  },
+  "DATABASES": {
+    "DEFAULT_MONGO": {
+      "URI": "mongodb://localhost:27017/erpv3_dev?replicaSet=erp-rs",
+      "USER": "",
+      "PASS": "",
+      "POOL_SIZE": 10,
+      "DB_NAME": "erpv3_dev"
+    }
+  },
+  "MEDICINE": {
+    "HOST": "https://icmistaging.compal-health.com/api/v1",
+    "ACCOUNT": "compal",
+    "PASSWORD": "123123"
+  },
+  "LUNA": {
+    "HOST": "http://localhost:3000",
+    "KEY": "icareerp-cdata",
+    "API_KEY": "8f623cbc-dc65-42e1-bb3f-80215f478a79",
+    "RETRY": 3,
+    "WAIT_MS": 200
+  },
+  "SIDEA": {
+    "HOST": "http://localhost:9000"
+  },
+  "EINVOICE": {
+    "ECPAY": {
+      "HOST": "https://einvoice-stage.ecpay.com.tw"
+    }
+  },
+  "SESSION": {
+    "KEY": "erpv3:sess",
+    "MAX_AGE": 86400000,
+    "AUTO_COMMIT": true,
+    "OVERWRITE": true,
+    "HTTP_ONLY": true,
+    "SIGNED": true,
+    "ROLLING": true,
+    "SAME_SITE": null,
+    "STORE_COLLECTION": "Sessions"
+  },
+  "TOKEN": {
+    "SECRET": "6xSHuJHsBxqGV7Il9tc8JbLegbqD2bsU",
+    "MAX_AGE": 86400
+  },
+  "FILE": {
+    "STORAGE_SERVICE": {
+      "HOST": "https://scs-staging.compal-health.com",
+      "BUCKET_NAME": "scs-erpv3-test",
+      "TOKEN_SECRET_KEY": "afd721b6-8d17-41f5-8659-c4df9a208c85",
+      "__PLATFORM": "erpv3"
+    },
+    "TOKEN_DURATION": 86400000,
+    "TEMP": {
+      "FOLDER": "./TEMP"
+    }
+  },
+  "ADMIN_AUTH": {
+    "KEY": "ej03xu3m06-au4a83",
+    "VALUE": "bp61l3-yjo4el-fm06vu04"
+  },
+  "REGISTER": {
+    "KEY": "Authorization",
+    "CLIENTS": [
+      {
+        "DOMAIN": "CACDI",
+        "CLIENT_SECRET": "Fp0zuUtbTmKghaDNjWfThPpRqLxSsTVL"
+      },
+      {
+        "DOMAIN": "LUNA",
+        "CLIENT_SECRET": "vAQagIDryiGGuPr0egLz5XpIoEsro90Y"
+      }
+    ]
+  },
+  "MIGRATION": {
+    "COMPANY_CODE": "28825252"
+  },
+  "EXTERNAL_APIS": {
+    "GCP": {
+      "GEOCODER": {
+        "API_KEY": "AIzaSyBTanFQtOyhSluBUKQLVogV-Tei-bmX4Yk",
+        "TIME_OUT": 3000
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "caseId": "000000626eb2351d2e140001",
+      "serviceCategory": "DC",
+      "name": "金貝貝",
+      "personalId": "compalTest",
+      "area": "台北市內湖區",
+      "gender": 0,
+      "status": 1
+    },
+    {
+      "caseId": "000000626eb2351d2e140000",
+      "serviceCategory": "HC",
+      "name": "金貝貝",
+      "supervisorName": "錢夫人",
+      "personalId": "compalTest",
+      "area": "台北市內湖區",
+      "gender": 0,
+      "status": 0
+    }
+  ]
+}

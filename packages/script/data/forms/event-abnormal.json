@@ -1,0 +1,21 @@
+{
+  "internalCode": "AA18-000C6-1.00",
+  "serviceTypes" : ["DC"],
+  "reviewRoles" : [],
+  "clientDomain" : "",
+  "companyId" : "",
+  "category" : "event",
+  "type" : "abnormal",
+  "version" : "v1.00",
+  "name" : "台北市異常事件通報單",
+  "reviewType" : 0,
+  "frequency" : "",
+  "displayGroup" : "",
+  "fillRoles" : [],
+  "viewRoles" : [],
+  "inUse" : true,
+  "valid" : true,
+  "__vn" : 0,
+  "__cc" : "",
+  "__sc" : ""
+}

@@ -1,0 +1,12 @@
+{
+  "SERVICE": {
+    "NAME": "ERPv3",
+    "PREFIX": "/main",
+    "HOST": "http://localhost:9000",
+    "CORS": ["http://localhost:3000"]
+  },
+  "ADMIN_AUTH": {
+    "KEY": "adminAuthKey",
+    "VALUE": "adminAuthValue"
+  }
+}

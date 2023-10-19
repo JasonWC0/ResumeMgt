@@ -1,0 +1,22 @@
+{
+  "internalCode": "SA18-000C6-1.00",
+  "serviceTypes" : ["DC"],
+  "reviewRoles" : [],
+  "clientDomain" : "LUNA",
+  "companyId" : "",
+  "category" : "evaluation",
+  "type" : "nsi",
+  "version" : "v1.00",
+  "name" : "1-11 (NSI)主動營養篩檢量表",
+  "reviewType" : 0,
+  "frequency" : "",
+  "displayGroup" : "收托量表",
+  "fillRoles" : [],
+  "viewRoles" : [],
+  "signatures": [],
+  "inUse" : true,
+  "valid" : true,
+  "__vn" : 0,
+  "__cc" : "",
+  "__sc" : ""
+}
